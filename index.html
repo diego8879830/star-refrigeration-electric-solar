@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="es-PR" data-tema="frio" data-nicho="aire">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Star Refrigeration Electric Solar – Refrigeración, electricidad y solar en Aguadilla</title>
+  <meta name="description" content="Refrigeración, aire acondicionado, servicios eléctricos y placas solares en Aguadilla. Llámenos o escríbanos por WhatsApp." />
+  <meta name="theme-color" content="#0B0B0C" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_PR" />
+  <meta property="og:title" content="Star Refrigeration Electric Solar – Refrigeración, electricidad y solar en Aguadilla" />
+  <meta property="og:description" content="Refrigeración, aire acondicionado, servicios eléctricos y placas solares en Aguadilla. Llámenos o escríbanos por WhatsApp." />
+  <meta property="og:url" content="https://diego8879830.github.io/star-refrigeration-electric-solar/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Star Refrigeration Electric Solar – Refrigeración, electricidad y solar en Aguadilla" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23C9A227'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Animaciones de scroll. Si GSAP no carga, la página se ve completa sin ellas -->
+  <script>
+    if (matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("anim-pre");
+      setTimeout(() => document.documentElement.classList.remove("anim-pre"), 900); // red lenta: no esconder el hero
+    }
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous"></script>
+
+  <!-- schema.org (se reescribe desde DATOS + preset al cargar) -->
+  <script type="application/ld+json" id="schema-negocio">
+  {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Star Refrigeration Electric Solar","telephone":"+1-787-566-8393","address":{"@type":"PostalAddress","addressRegion":"PR","addressCountry":"US","streetAddress":"Urb. Cristal","addressLocality":"Aguadilla","postalCode":"00603"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"11:00","closes":"15:00"}]}
+  </script>
+
+  <style>
+    /* =========================================================
+       1. VARIABLES — superficies (claro/oscuro) + tema de color
+       ========================================================= */
+    :root{
+      --bg:#F6F5F2;
+      --surface:#FFFFFF;
+      --surface-2:#EFEDE8;
+      --text:#17171A;
+      --muted:#5E5E66;
+      --line:#E0DDD6;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      /* tema (se sobreescribe con data-tema) */
+      --hero-bg:#0B0B0C;
+      --hero-bg-2:#1C1B19;
+      --hero-text:#F5F3EE;
+      --accent:#C9A227;
+      --accent-ink:#141210;
+      --accent-soft:rgba(201,162,39,.14);
+      --wa:#25D366;
+      --wa-ink:#06301A;
+    }
+    @media (prefers-color-scheme: dark){
+      :root:not([data-modo="claro"]){
+        --bg:#0F0F11; --surface:#18181B; --surface-2:#222226;
+        --text:#F2F1EE; --muted:#A3A3AB; --line:#2E2E33;
+        --shadow:0 10px 30px rgba(0,0,0,.4);
+      }
+    }
+    :root[data-modo="oscuro"]{
+      --bg:#0F0F11; --surface:#18181B; --surface-2:#222226;
+      --text:#F2F1EE; --muted:#A3A3AB; --line:#2E2E33;
+      --shadow:0 10px 30px rgba(0,0,0,.4);
+    }
+
+    /* Temas de color */
+    [data-tema="negro"]{ --hero-bg:#0B0B0C; --hero-bg-2:#1C1B19; --hero-text:#F5F3EE; --accent:#C9A227; --accent-ink:#141210; --accent-soft:rgba(201,162,39,.14); }
+    [data-tema="azul"]{ --hero-bg:#081C3F; --hero-bg-2:#0F2F66; --hero-text:#F2F6FF; --accent:#3D8BFF; --accent-ink:#FFFFFF; --accent-soft:rgba(61,139,255,.14); }
+    [data-tema="verde"]{ --hero-bg:#0C2A1C; --hero-bg-2:#144430; --hero-text:#F1FAF4; --accent:#2BB673; --accent-ink:#04200F; --accent-soft:rgba(43,182,115,.15); }
+    [data-tema="naranja"]{ --hero-bg:#24160A; --hero-bg-2:#3D2410; --hero-text:#FFF6EC; --accent:#F28C28; --accent-ink:#1F1000; --accent-soft:rgba(242,140,40,.15); }
+    /* Temas de cafetería (también cambian las superficies en modo claro) */
+    [data-tema="cafe"]{
+      --hero-bg:#3B2416; --hero-bg-2:#5A3823; --hero-text:#FAF3E8; --accent:#C8843A; --accent-ink:#2A170C; --accent-soft:rgba(200,132,58,.16);
+      --bg:#FAF3E8; --surface:#FFFDF9; --surface-2:#F2E6D4; --text:#3B2416; --muted:#7A5E4B; --line:#E6D7C2;
+    }
+    [data-tema="fresco"]{
+      --hero-bg:#2C4232; --hero-bg-2:#6B8F71; --hero-text:#FFFFFF; --accent:#D9734E; --accent-ink:#2A1208; --accent-soft:rgba(217,115,78,.15);
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#EEF3EE; --text:#1E2A21; --muted:#5B6B5E; --line:#DCE5DC;
+    }
+    :root[data-tema="oscuro"]{
+      --hero-bg:#14100D; --hero-bg-2:#2A2019; --hero-text:#FAF3E8; --accent:#D4A64A; --accent-ink:#1C1612; --accent-soft:rgba(212,166,74,.15);
+      --bg:#1C1612; --surface:#261E18; --surface-2:#2F251E; --text:#F5ECDD; --muted:#BFAE98; --line:#3A2E25;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+    :root[data-tema="oscuro"][data-modo="claro"]{
+      --bg:#FAF3E8; --surface:#FFFDF9; --surface-2:#F2E6D4; --text:#2A2019; --muted:#6E5D4C; --line:#E6D7C2;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    /* Temas del nicho aire. "verde" y "oscuro" solo cambian con data-nicho="aire": solar y cafetería siguen igual */
+    [data-tema="frio"]{
+      --hero-bg:#0B4F8A; --hero-bg-2:#0E65AD; --hero-text:#FFFFFF; --accent:#1FA2D6; --accent-ink:#04222F; --accent-soft:rgba(31,162,214,.16);
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#EAF4FB; --text:#10293F; --muted:#4A6478; --line:#D5E6F2; --accent-txt:#0B4F8A;
+    }
+    :where([data-nicho="aire"])[data-tema="verde"]{
+      --hero-bg:#1E6B52; --hero-bg-2:#175642; --hero-text:#FFFFFF; --accent:#F4A261; --accent-ink:#2B1505; --accent-soft:rgba(244,162,97,.18);
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#E6F4EE; --text:#12332A; --muted:#4C6A5F; --line:#D2E6DC; --accent-txt:#1E6B52;
+    }
+    :root[data-nicho="aire"][data-tema="oscuro"]{
+      --hero-bg:#0D1B2A; --hero-bg-2:#14304A; --hero-text:#FFFFFF; --accent:#1FA2D6; --accent-ink:#04222F; --accent-soft:rgba(31,162,214,.16);
+      --bg:#0D1B2A; --surface:#13263A; --surface-2:#112234; --text:#FFFFFF; --muted:#A9BBCC; --line:#24405A;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+    :root[data-nicho="aire"][data-tema="oscuro"][data-modo="claro"]{
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#EAF4FB; --text:#10293F; --muted:#4A6478; --line:#D5E6F2; --accent-txt:#0B4F8A;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    /* Temas del nicho electricista. "azul" y "oscuro" solo cambian con data-nicho="electricista": los otros nichos siguen igual */
+    [data-tema="voltaje"]{
+      --hero-bg:#10264A; --hero-bg-2:#173463; --hero-text:#FFFFFF; --accent:#FFC400; --accent-ink:#10264A; --accent-soft:rgba(255,196,0,.18);
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F2F4F7; --text:#10264A; --muted:#4F5D73; --line:#DDE2EA; --accent-txt:#10264A;
+    }
+    :where([data-nicho="electricista"])[data-tema="azul"]{
+      --hero-bg:#1D5BFF; --hero-bg-2:#1547D1; --hero-text:#FFFFFF; --accent:#FFB27A; --accent-ink:#3A1C06; --accent-soft:rgba(255,178,122,.2);
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#EEF3FF; --text:#0E1F4D; --muted:#4A5A7D; --line:#D9E3FA; --accent-txt:#1D5BFF;
+    }
+    :root[data-nicho="electricista"][data-tema="oscuro"]{
+      --hero-bg:#14171C; --hero-bg-2:#1E2229; --hero-text:#FFFFFF; --accent:#FFC400; --accent-ink:#14171C; --accent-soft:rgba(255,196,0,.15);
+      --bg:#14171C; --surface:#1C2027; --surface-2:#191D23; --text:#FFFFFF; --muted:#AEB4BE; --line:#2C323B;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+    :root[data-nicho="electricista"][data-tema="oscuro"][data-modo="claro"]{
+      --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F2F4F7; --text:#14171C; --muted:#555C68; --line:#DDE2EA; --accent-txt:#14171C;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    /* Acentos claros sobre fondo blanco: el texto usa --accent-txt; en modo oscuro vuelve al acento */
+    @media (prefers-color-scheme: dark){
+      :root:not([data-modo="claro"]){ --accent-txt:var(--accent); }
+    }
+    :root[data-modo="oscuro"]{ --accent-txt:var(--accent); }
+
+    /* =========================================================
+       2. BASE
+       ========================================================= */
+    *,*::before,*::after{ box-sizing:border-box; }
+    html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font:16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      transition:background .3s, color .3s;
+    }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; }
+    h1,h2,h3{ font-family:Sora, Inter, sans-serif; line-height:1.15; margin:0 0 .5em; letter-spacing:-.01em; }
+    p{ margin:0 0 1em; }
+    .wrap{ width:100%; max-width:1120px; margin:0 auto; padding:0 16px; }
+    section{ padding:72px 0; }
+    .eyebrow{ display:inline-block; font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--accent-txt, var(--accent)); margin-bottom:10px; }
+    .sec-title{ font-size:clamp(1.6rem, 4.5vw, 2.4rem); }
+    .sec-sub{ color:var(--muted); max-width:620px; }
+    .nota{ font-size:.85rem; color:var(--muted); margin-top:18px; font-style:italic; }
+    @media (min-width:768px){ .wrap{ padding:0 28px; } section{ padding:96px 0; } }
+
+    /* Botones */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      min-height:52px; padding:0 22px; border-radius:999px; border:0;
+      font:600 1rem Inter, sans-serif; text-decoration:none; cursor:pointer;
+      transition:transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn svg{ width:20px; height:20px; flex:none; }
+    .btn:hover{ transform:translateY(-2px); }
+    .btn-wa{ background:var(--wa); color:var(--wa-ink); box-shadow:0 8px 22px rgba(37,211,102,.3); }
+    .btn-accent{ background:var(--accent); color:var(--accent-ink); }
+    .btn-ghost{ background:transparent; color:var(--hero-text); border:1.5px solid rgba(255,255,255,.35); }
+    .btn-line{ background:transparent; color:var(--text); border:1.5px solid var(--line); }
+
+    /* =========================================================
+       3. HEADER
+       ========================================================= */
+    header{
+      position:sticky; top:0; z-index:50;
+      background:color-mix(in srgb, var(--hero-bg) 88%, transparent);
+      backdrop-filter:saturate(1.4) blur(12px); -webkit-backdrop-filter:saturate(1.4) blur(12px);
+      color:var(--hero-text); border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; gap:12px; height:64px; }
+    .marca{ display:flex; align-items:center; gap:10px; min-width:0; text-decoration:none; }
+    .logo{
+      width:38px; height:38px; border-radius:11px; flex:none;
+      display:grid; place-items:center; background:var(--accent); color:var(--accent-ink);
+      font:800 .95rem Sora, sans-serif;
+    }
+    .marca-nombre{ font:700 1rem Sora, sans-serif; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .nav-links{ display:none; gap:22px; font-size:.92rem; }
+    .nav-links a{ text-decoration:none; opacity:.8; }
+    .nav-links a:hover{ opacity:1; }
+    .nav-acc{ display:flex; align-items:center; gap:8px; flex:none; }
+    .modo-btn{
+      width:40px; height:40px; border-radius:50%; border:1px solid rgba(255,255,255,.2);
+      background:transparent; color:var(--hero-text); display:grid; place-items:center; cursor:pointer;
+    }
+    .modo-btn svg{ width:18px; height:18px; }
+    .nav-wa{ min-height:40px; padding:0 16px; font-size:.9rem; display:none; }
+    @media (min-width:900px){ .nav-links{ display:flex; } .nav-wa{ display:inline-flex; } }
+
+    /* =========================================================
+       4. HERO
+       ========================================================= */
+    .hero{
+      position:relative; overflow:hidden; color:var(--hero-text);
+      background:
+        radial-gradient(900px 500px at 85% -10%, var(--accent-soft), transparent 60%),
+        linear-gradient(160deg, var(--hero-bg) 0%, var(--hero-bg-2) 100%);
+      padding:64px 0 80px;
+    }
+    .hero::after{
+      content:""; position:absolute; inset:0; pointer-events:none; opacity:.06;
+      background-image:repeating-linear-gradient(135deg, #fff 0 1px, transparent 1px 14px);
+    }
+    .hero-grid{ position:relative; z-index:1; display:grid; gap:40px; align-items:center; }
+    .etiqueta{
+      display:inline-flex; align-items:center; gap:8px; padding:7px 14px; border-radius:999px;
+      background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);
+      font-size:.85rem; font-weight:600; margin-bottom:18px;
+    }
+    .etiqueta i{ width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block; }
+    .hero h1{ font-size:clamp(2.1rem, 8vw, 3.8rem); font-weight:800; margin-bottom:16px; }
+    .hero h1 em{ font-style:normal; color:var(--accent); }
+    .hero-sub{ font-size:clamp(1.05rem, 2.6vw, 1.2rem); opacity:.85; max-width:520px; margin-bottom:28px; }
+    .hero-ctas{ display:flex; flex-wrap:wrap; gap:12px; }
+    .hero-ctas .btn{ flex:1 1 200px; }
+    @media (min-width:600px){ .hero-ctas .btn{ flex:0 0 auto; } }
+    .hero-visual{
+      position:relative; aspect-ratio:4/5; max-height:520px; border-radius:24px; overflow:hidden;
+      background:linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.12); display:grid; place-items:center;
+    }
+    .hero-visual img{ width:100%; height:100%; object-fit:cover; }
+    .hero-visual .ph{ text-align:center; opacity:.65; font-size:.9rem; padding:20px; }
+    .hero-visual .ph svg{ width:64px; height:64px; margin:0 auto 10px; color:var(--accent); }
+    @media (min-width:900px){ .hero{ padding:96px 0 110px; } .hero-grid{ grid-template-columns:1.15fr .85fr; } }
+    @media (max-width:899px){ .hero-visual{ display:none; } }
+
+    /* =========================================================
+       5. SERVICIOS
+       ========================================================= */
+    .cards{ display:grid; gap:16px; margin-top:32px; }
+    @media (min-width:640px){ .cards{ grid-template-columns:repeat(2,1fr); } }
+    @media (min-width:1000px){ .cards{ grid-template-columns:repeat(4,1fr); } }
+    .card{
+      background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+      padding:24px; box-shadow:var(--shadow); transition:transform .25s, border-color .25s;
+    }
+    .card:hover{ transform:translateY(-4px); border-color:var(--accent); }
+    .card .ico{
+      width:48px; height:48px; border-radius:14px; display:grid; place-items:center;
+      background:var(--accent-soft); color:var(--accent-txt, var(--accent)); margin-bottom:16px;
+    }
+    .card .ico svg{ width:24px; height:24px; }
+    .card h3{ font-size:1.1rem; margin-bottom:6px; }
+    .card p{ color:var(--muted); font-size:.95rem; margin:0; }
+
+    /* =========================================================
+       6. SELECTOR DE WHATSAPP
+       ========================================================= */
+    .selector{ background:var(--surface-2); }
+    .sel-box{
+      background:var(--surface); border:1px solid var(--line); border-radius:24px;
+      padding:24px; box-shadow:var(--shadow); max-width:760px; margin:28px auto 0;
+    }
+    .chips{ display:flex; flex-wrap:wrap; gap:10px; margin:6px 0 20px; }
+    .chip{
+      padding:11px 16px; border-radius:999px; border:1.5px solid var(--line); background:transparent;
+      color:var(--text); font:600 .92rem Inter, sans-serif; cursor:pointer; transition:all .2s;
+    }
+    .chip[aria-pressed="true"]{ background:var(--accent); border-color:var(--accent); color:var(--accent-ink); }
+    .preview{
+      background:var(--surface-2); border-radius:14px; padding:14px 16px; font-size:.95rem;
+      color:var(--muted); margin-bottom:18px; border-left:4px solid var(--wa);
+      overflow-wrap:anywhere;
+    }
+    .sel-box .btn{ width:100%; }
+    .sel-label{ font-weight:700; margin-bottom:4px; }
+
+    /* =========================================================
+       7. GALERÍA
+       ========================================================= */
+    .galeria{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:32px; }
+    @media (min-width:800px){ .galeria{ grid-template-columns:repeat(3,1fr); gap:16px; } }
+    .foto{
+      position:relative; aspect-ratio:1; border-radius:16px; overflow:hidden;
+      background:
+        repeating-linear-gradient(135deg, var(--surface-2) 0 10px, var(--surface) 10px 20px);
+      border:1px dashed var(--line); display:grid; place-items:center;
+    }
+    .foto img{ width:100%; height:100%; object-fit:cover; transition:transform .5s; }
+    .foto:hover img{ transform:scale(1.05); }
+    .foto span{ font-size:.85rem; color:var(--muted); font-weight:600; text-align:center; padding:8px; }
+
+    /* =========================================================
+       8. ANTES Y DESPUÉS
+       ========================================================= */
+    .ba{
+      position:relative; max-width:760px; margin:32px auto 0; aspect-ratio:4/3;
+      border-radius:22px; overflow:hidden; box-shadow:var(--shadow); user-select:none; touch-action:pan-y;
+    }
+    .ba-layer{ position:absolute; inset:0; display:grid; place-items:center; }
+    .ba-layer img{ width:100%; height:100%; object-fit:cover; }
+    .ba-antes{ background:linear-gradient(135deg, #6b6b70, #3c3c40); }
+    .ba-despues{ background:linear-gradient(135deg, var(--hero-bg-2), var(--hero-bg)); clip-path:inset(0 0 0 50%); }
+    .ba-tag{
+      position:absolute; top:14px; padding:6px 12px; border-radius:999px; font-size:.78rem; font-weight:700;
+      background:rgba(0,0,0,.55); color:#fff; z-index:2;
+    }
+    .ba-tag.l{ left:14px; } .ba-tag.r{ right:14px; background:var(--accent); color:var(--accent-ink); }
+    .ba-ph{ color:rgba(255,255,255,.7); font-weight:600; font-size:.9rem; }
+    .ba-line{
+      position:absolute; top:0; bottom:0; left:50%; width:3px; background:#fff; transform:translateX(-50%);
+      z-index:3; pointer-events:none;
+    }
+    .ba-line::after{
+      content:"⟷"; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+      width:44px; height:44px; border-radius:50%; background:#fff; color:#111;
+      display:grid; place-items:center; font-weight:700; box-shadow:0 4px 14px rgba(0,0,0,.3);
+    }
+    .ba input{
+      position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:ew-resize; z-index:4; margin:0;
+    }
+
+    /* =========================================================
+       9. CÓMO FUNCIONA
+       ========================================================= */
+    .pasos{ display:grid; gap:16px; margin-top:32px; counter-reset:paso; }
+    @media (min-width:800px){ .pasos{ grid-template-columns:repeat(3,1fr); } }
+    .paso{
+      position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+      padding:26px 24px 24px;
+    }
+    .paso::before{
+      counter-increment:paso; content:counter(paso);
+      display:grid; place-items:center; width:42px; height:42px; border-radius:50%;
+      background:var(--accent); color:var(--accent-ink); font:800 1.1rem Sora, sans-serif; margin-bottom:14px;
+    }
+    .paso h3{ font-size:1.1rem; }
+    .paso p{ color:var(--muted); margin:0; font-size:.95rem; }
+
+    /* =========================================================
+       10. RESEÑAS (espacios de relleno)
+       ========================================================= */
+    .resenas{ background:var(--surface-2); }
+    .res-grid{ display:grid; gap:16px; margin-top:32px; }
+    @media (min-width:800px){ .res-grid{ grid-template-columns:repeat(3,1fr); } }
+    .res{
+      background:var(--surface); border:1px dashed var(--line); border-radius:var(--radius); padding:24px;
+      color:var(--muted); font-size:.95rem;
+    }
+    .res b{ display:block; color:var(--text); margin-top:12px; font-size:.9rem; }
+    .res.real{ border-style:solid; color:var(--text); box-shadow:var(--shadow); }
+    .res.real b{ color:var(--muted); font-weight:600; }
+
+    /* =========================================================
+       11. FAQ
+       ========================================================= */
+    .faq{ max-width:780px; margin:32px auto 0; display:grid; gap:12px; }
+    details{
+      background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:0 20px;
+      transition:border-color .2s;
+    }
+    details[open]{ border-color:var(--accent); }
+    summary{
+      list-style:none; cursor:pointer; padding:18px 30px 18px 0; font-weight:600; position:relative;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    summary::after{
+      content:"+"; position:absolute; right:0; top:50%; transform:translateY(-50%);
+      font-size:1.4rem; color:var(--accent-txt, var(--accent)); transition:transform .25s;
+    }
+    details[open] summary::after{ transform:translateY(-50%) rotate(45deg); }
+    details p{ color:var(--muted); padding-bottom:18px; margin:0; }
+
+    /* =========================================================
+       12. CONTACTO
+       ========================================================= */
+    .contacto-grid{ display:grid; gap:16px; margin-top:32px; }
+    @media (min-width:800px){ .contacto-grid{ grid-template-columns:repeat(2,1fr); } }
+    .dato{
+      display:flex; gap:14px; align-items:flex-start; background:var(--surface);
+      border:1px solid var(--line); border-radius:var(--radius); padding:20px; text-decoration:none; min-width:0;
+    }
+    .dato .ico{
+      width:44px; height:44px; flex:none; border-radius:12px; display:grid; place-items:center;
+      background:var(--accent-soft); color:var(--accent-txt, var(--accent));
+    }
+    .dato .ico svg{ width:22px; height:22px; }
+    .dato small{ display:block; color:var(--muted); font-size:.8rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
+    .dato strong{ display:block; font-size:1.05rem; overflow-wrap:anywhere; }
+    .dato .pend{ color:var(--muted); font-weight:500; font-style:italic; font-size:.98rem; }
+
+    /* CTA final */
+    .cta-final{
+      color:var(--hero-text); text-align:center;
+      background:radial-gradient(700px 300px at 50% 0%, var(--accent-soft), transparent 70%), var(--hero-bg);
+    }
+    .cta-final .sec-sub{ color:inherit; opacity:.8; margin:0 auto 26px; }
+    .cta-final .hero-ctas{ justify-content:center; }
+
+    footer{
+      background:var(--hero-bg); color:var(--hero-text); opacity:.95; padding:28px 0 100px;
+      font-size:.85rem; border-top:1px solid rgba(255,255,255,.08);
+    }
+    footer .wrap{ display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; }
+    footer span{ opacity:.7; }
+    @media (min-width:900px){ footer{ padding-bottom:28px; } }
+
+    /* Barra de muestra */
+    .muestra{
+      background:var(--accent); color:var(--accent-ink); text-align:center;
+      font-size:.8rem; font-weight:600; padding:7px 16px; line-height:1.4;
+    }
+    .muestra b{ letter-spacing:.08em; }
+    .marca-txt{ display:flex; flex-direction:column; min-width:0; line-height:1.2; }
+    .marca-sub{ font-size:.72rem; opacity:.7; font-weight:500; }
+
+    /* Calificación + etiquetas */
+    .rating{
+      display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-top:28px;
+      background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+      padding:20px 22px; box-shadow:var(--shadow);
+    }
+    .rating .num{ font:800 2.2rem Sora, sans-serif; line-height:1; }
+    .rating .stars{ color:var(--accent); font-size:1.2rem; letter-spacing:2px; }
+    .rating small{ display:block; color:var(--muted); font-size:.85rem; }
+    .tags-title{ font-weight:700; margin:24px 0 10px; }
+    .tags{ display:flex; flex-wrap:wrap; gap:10px; }
+    .tag{
+      padding:9px 14px; border-radius:999px; background:var(--accent-soft); color:var(--text);
+      border:1px solid var(--line); font-size:.9rem; font-weight:600;
+    }
+    .mapa-btn{ margin-top:18px; }
+
+    /* Barra fija móvil */
+    .barra{
+      position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1fr 1fr; gap:10px;
+      padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+      background:color-mix(in srgb, var(--surface) 92%, transparent);
+      backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line);
+      transform:translateY(110%); transition:transform .35s;
+    }
+    .barra.on{ transform:none; }
+    .barra .btn{ min-height:48px; padding:0 12px; font-size:.95rem; }
+    @media (min-width:900px){ .barra{ display:none; } }
+
+    /* =========================================================
+       13. ANIMACIONES
+       ========================================================= */
+    .anim-pre .hero .reveal{ opacity:0; }
+    @keyframes pulso{ 0%,100%{ box-shadow:0 0 0 0 rgba(37,211,102,.45);} 50%{ box-shadow:0 0 0 12px rgba(37,211,102,0);} }
+    .hero .btn-wa{ animation:pulso 2.6s infinite; }
+    @media (prefers-reduced-motion: reduce){
+      *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+    }
+
+    /* =========================================================
+       14. CAFETERÍA (menú de 6, sobre nosotros, horario por día)
+       ========================================================= */
+    @media (min-width:1000px){ .cards.seis{ grid-template-columns:repeat(3,1fr); } }
+    .sobre-txt{ font-size:1.05rem; max-width:680px; }
+    .horas{ list-style:none; margin:6px 0 0; padding:0; display:grid; gap:4px; font-size:.95rem; }
+    .horas li{ display:flex; justify-content:space-between; gap:12px; padding-bottom:4px; border-bottom:1px dashed var(--line); }
+    .horas li:last-child{ border-bottom:0; padding-bottom:0; }
+    .horas li span:first-child{ font-weight:600; }
+    .horas li span:last-child{ color:var(--muted); text-align:right; }
+
+    /* =========================================================
+       15. REMODELACIÓN (móvil primero; las clases .pila, .pista y
+       .con-pista las pone GSAP, sin él la página queda normal)
+       ========================================================= */
+    section{ padding:88px 0; }
+    @media (min-width:768px){ section{ padding:128px 0; } }
+    .sec-title{ font-size:clamp(2rem, 7.5vw, 3.6rem); letter-spacing:-.025em; }
+    .eyebrow{ display:inline-flex; align-items:center; gap:10px; }
+    .eyebrow::before{ content:""; width:28px; height:2px; background:currentColor; }
+
+    /* Barra de progreso */
+    .progreso{
+      position:absolute; left:0; right:0; bottom:-1px; height:3px; background:var(--accent);
+      transform:scaleX(0); transform-origin:left;
+    }
+
+    /* Hero a pantalla completa */
+    .hero{ min-height:calc(100svh - 64px); display:flex; align-items:center; padding:48px 0 112px; }
+    .hero-grid{ width:100%; }
+    .hero-fondo{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+    .hero-fondo i{ position:absolute; border-radius:50%; border:1px solid var(--accent); opacity:.3; }
+    .hero-fondo i:nth-child(1){ width:130vmin; height:130vmin; right:-58vmin; top:-42vmin; }
+    .hero-fondo i:nth-child(2){ width:88vmin; height:88vmin; right:-37vmin; top:-21vmin; opacity:.45; }
+    .hero-fondo i:nth-child(3){ width:46vmin; height:46vmin; right:-16vmin; top:0; border:0; background:var(--accent-soft); opacity:1; }
+    .hero h1{ font-size:clamp(2.7rem, 12vw, 6rem); line-height:1.02; letter-spacing:-.03em; overflow-wrap:anywhere; }
+    .palabra{ display:inline-block; overflow:hidden; vertical-align:top; padding-bottom:.12em; margin-bottom:-.12em; }
+    .palabra > span{ display:inline-block; }
+    .hero-visual{ border-radius:32px; max-height:600px; }
+    @media (max-width:899px){ .hero-visual.con-foto{ display:grid; aspect-ratio:4/3; } }
+    @media (min-width:900px){ .hero{ padding:72px 0; } }
+
+    /* Tarjetas */
+    .card{ border-radius:24px; padding:28px; transition:translate .25s, border-color .25s; }
+    .card:hover{ transform:none; translate:0 -4px; }
+    .card .ico{ width:56px; height:56px; border-radius:16px; margin-bottom:24px; }
+    .card h3{ font-size:1.2rem; }
+    .cards.pila{ gap:14px; }
+    .pila .card{ position:sticky; top:calc(84px + var(--i) * 10px); transform-origin:50% 0; }
+    #servicios.con-pista{ padding:72px 0; overflow:hidden; }
+    .cards.pista{ display:flex; gap:20px; width:max-content; margin-top:36px; }
+    .pista .card{ flex:none; display:flex; flex-direction:column; width:min(380px, 32vw); min-height:300px; }
+    .pista .card .ico{ margin-bottom:auto; }
+    .pista .card h3{ font-size:1.35rem; }
+
+    /* Pasos: línea que se llena con el scroll */
+    .pasos{
+      position:relative; gap:0;
+      background:linear-gradient(var(--line), var(--line)) 20px 21px / 2px calc(100% - 42px) no-repeat;
+    }
+    .pasos::before{
+      content:""; position:absolute; left:20px; top:21px; bottom:21px; width:2px; background:var(--accent);
+      transform:scaleY(var(--prog, 1)); transform-origin:top;
+    }
+    .paso{ background:none; border:0; border-radius:0; padding:0 0 40px 66px; }
+    .paso:last-child{ padding-bottom:0; }
+    .paso::before{ position:absolute; left:0; top:0; margin:0; }
+    .paso:last-child::after{ content:""; position:absolute; left:0; top:42px; bottom:0; width:42px; background:var(--surface-2); } /* la línea termina en el último número */
+    @media (min-width:800px){
+      .pasos{ gap:24px; background-position:21px 20px; background-size:calc(66.67% + 16px) 2px; }
+      .pasos::before{ left:21px; right:calc(33.33% - 37px); top:20px; bottom:auto; width:auto; height:2px; transform:scaleX(var(--prog, 1)); transform-origin:left; }
+      .paso, .paso:last-child{ padding:66px 16px 0 0; }
+      .paso:last-child::after{ display:none; }
+    }
+
+    /* Galería en mosaico */
+    .foto:first-child, .foto:last-child{ grid-column:span 2; aspect-ratio:16/10; }
+    @media (min-width:800px){
+      .foto:first-child{ grid-row:span 2; aspect-ratio:auto; }
+      .foto:last-child{ grid-column:auto; aspect-ratio:1; }
+    }
+
+    /* Preguntas en líneas */
+    .faq{ gap:0; max-width:820px; }
+    details{ background:none; border:0; border-bottom:1px solid var(--line); border-radius:0; padding:0; }
+    summary{ padding:22px 34px 22px 0; font-size:1.05rem; }
+
+    /* Cierre */
+    .cta-final{ padding:112px 0 120px; }
+    .cta-final .sec-title{ font-size:clamp(2.2rem, 8vw, 4.4rem); }
+  </style>
+</head>
+<body>
+
+  <div class="muestra" id="muestra"><b>MUESTRA</b> de diseño preparada para <span data-k="nombre">Star Refrigeration Electric Solar</span></div>
+
+  <header>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
+    <div class="wrap nav">
+      <a class="marca" href="#inicio">
+        <span class="logo" id="logo">SR</span>
+        <span class="marca-txt"><span class="marca-nombre" data-k="nombre">Star Refrigeration Electric Solar</span><span class="marca-sub" id="marcaSub" hidden></span></span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#como">Cómo trabajamos</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-acc">
+        <button class="modo-btn" id="modoBtn" type="button" aria-label="Cambiar modo claro u oscuro"></button>
+        <a class="btn btn-wa nav-wa" data-wa href="https://wa.me/17875668393?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-fondo" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="wrap hero-grid" style="grid-template-columns:1fr">
+        <div>
+          <div class="etiqueta reveal"><i></i><span id="etiqueta">Aguadilla, Puerto Rico</span></div>
+          <h1 class="reveal" id="heroTitulo">Refrigeración, electricidad y energía solar en Aguadilla</h1>
+          <p class="hero-sub reveal" id="heroSub">Servicio profesional. Escríbanos por WhatsApp o llámenos.</p>
+          <div class="hero-ctas reveal">
+            <a class="btn btn-wa" data-wa href="https://wa.me/17875668393?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span id="ctaWa">Escribir por WhatsApp</span></a>
+            <a class="btn btn-ghost" data-tel href="tel:+17875668393"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span id="ctaTel">Llamar ahora</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" id="heroVisual" style="display:none"></div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <div class="wrap">
+        <span class="eyebrow reveal">Servicios</span>
+        <h2 class="sec-title reveal" id="servTitulo">Lo que hacemos</h2>
+        <div class="cards" id="servicios-lista">
+          <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17"/><path d="M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/></svg></div><h3>Refrigeración y aire acondicionado</h3><p>Servicio para sus equipos de refrigeración y de aire acondicionado.</p></article>
+          <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg></div><h3>Servicios eléctricos</h3><p>Trabajos de electricidad. Cuéntenos qué necesita.</p></article>
+          <article class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-2 10H6z"/><path d="M12 4v10M5 9h14M12 14v6M8 20h8"/></svg></div><h3>Placas solares</h3><p>Instalación y reparación de placas solares.</p></article>
+        </div>
+        <p class="nota reveal" id="servNota"></p>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS (oculta salvo en los nichos que la usan) -->
+    <section id="sobre" style="background:var(--surface-2)" hidden>
+      <div class="wrap">
+        <span class="eyebrow reveal">Sobre nosotros</span>
+        <h2 class="sec-title reveal" id="sobreTitulo"></h2>
+        <p class="sec-sub sobre-txt reveal" id="sobreTexto"></p>
+        <p class="sec-sub sobre-txt reveal" id="sobreHistoria"></p>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como" style="background:var(--surface-2)">
+      <div class="wrap">
+        <span class="eyebrow reveal">Cómo trabajamos</span>
+        <h2 class="sec-title reveal">Así de fácil</h2>
+        <div class="pasos" id="pasos-lista">
+          <div class="paso reveal"><h3>Nos escribe o nos llama</h3><p>Cuéntenos qué necesita: refrigeración, aire acondicionado, electricidad o placas solares.</p></div>
+          <div class="paso reveal"><h3>Coordinamos el día</h3><p>Acordamos con usted el día y la hora.</p></div>
+          <div class="paso reveal"><h3>Servicio</h3><p>Hacemos el trabajo que acordamos con usted.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS (oculta salvo en los nichos que la usan) -->
+    <section id="porque" hidden>
+      <div class="wrap">
+        <span class="eyebrow reveal">Por qué elegirnos</span>
+        <h2 class="sec-title reveal">Lo que nos respalda</h2>
+        <div class="cards" id="porque-lista"></div>
+      </div>
+    </section>
+
+    <!-- LICENCIAS Y CREDENCIALES (oculta salvo que el negocio dé la información) -->
+    <section id="licencias" hidden>
+      <div class="wrap">
+        <span class="eyebrow reveal">Credenciales</span>
+        <h2 class="sec-title reveal">Licencias y credenciales</h2>
+        <div class="contacto-grid" id="licencias-lista"></div>
+      </div>
+    </section>
+
+    <!-- ZONAS QUE SERVIMOS (oculta salvo en los nichos que la usan) -->
+    <section id="zonas" hidden>
+      <div class="wrap">
+        <span class="eyebrow reveal">Zonas que servimos</span>
+        <h2 class="sec-title reveal">Servimos estos pueblos</h2>
+        <div class="tags reveal" id="zonas-lista" style="margin-top:24px"></div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="resenas" id="resenas">
+      <div class="wrap">
+        <span class="eyebrow reveal">Reseñas</span>
+        <h2 class="sec-title reveal">Lo que dicen los clientes</h2>
+        <div id="rating-box"><div class="rating reveal"><span class="num">5.0</span><div><span class="stars" aria-hidden="true">★★★★★</span><small>Calificación en Google</small></div></div><p class="tags-title reveal">Los clientes destacan</p><div class="tags reveal"><span class="tag">Servicio excelente y profesional</span><span class="tag">Reparación de placas solares a buen precio</span><span class="tag">Trabajo muy bien hecho</span></div></div>
+        <div class="res-grid" id="resenas-lista"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <div style="text-align:center">
+          <span class="eyebrow reveal">Preguntas frecuentes</span>
+          <h2 class="sec-title reveal">¿Tiene dudas?</h2>
+        </div>
+        <div class="faq" id="faq-lista">
+          <details class="reveal"><summary>¿Cuál es el horario?</summary><p>De lunes a viernes, de 8:00 a.m. a 3:00 p.m., y los sábados, de 11:00 a.m. a 3:00 p.m. Los domingos estamos cerrados.</p></details>
+          <details class="reveal"><summary>¿Dónde están?</summary><p>En la Urb. Cristal, Aguadilla, PR 00603. En la sección de Contacto está el botón “Cómo llegar”, que abre la dirección en Google Maps.</p></details>
+          <details class="reveal"><summary>¿Cómo pido un servicio?</summary><p>Escríbanos por WhatsApp al 787-566-8393 o llámenos a ese mismo número. Díganos si necesita refrigeración, aire acondicionado, servicios eléctricos o placas solares.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" style="padding-top:0">
+      <div class="wrap">
+        <span class="eyebrow reveal">Ubicación y horario</span>
+        <h2 class="sec-title reveal">Comuníquese con nosotros</h2>
+        <p class="sec-sub reveal" id="contactoSub">Escríbanos o llámenos.</p>
+        <div class="contacto-grid" id="contacto-lista">
+          <a class="dato reveal" href="https://wa.me/17875668393?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></div><div style="min-width:0"><small>WhatsApp</small><strong>787-566-8393</strong></div></a>
+          <a class="dato reveal" href="tel:+17875668393"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div><div style="min-width:0"><small>Teléfono</small><strong>787-566-8393</strong></div></a>
+          <div class="dato reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div style="flex:1;min-width:0"><small>Horario</small><ul class="horas"><li><span>Lunes</span><span>8:00 a.m. – 3:00 p.m.</span></li><li><span>Martes</span><span>8:00 a.m. – 3:00 p.m.</span></li><li><span>Miércoles</span><span>8:00 a.m. – 3:00 p.m.</span></li><li><span>Jueves</span><span>8:00 a.m. – 3:00 p.m.</span></li><li><span>Viernes</span><span>8:00 a.m. – 3:00 p.m.</span></li><li><span>Sábado</span><span>11:00 a.m. – 3:00 p.m.</span></li><li><span>Domingo</span><span>Cerrado</span></li></ul></div></div>
+          <a class="dato reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Star%20Refrigeration%20Electric%20Solar%2C%20Urb.%20Cristal%2C%20Aguadilla%2C%20PR%2C%2000603" target="_blank" rel="noopener"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div style="min-width:0"><small>Dirección</small><strong>Urb. Cristal, Aguadilla, PR 00603</strong></div></a>
+          <div class="dato reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div><div style="min-width:0"><small>Google</small><strong>5.0 ★</strong></div></div>
+        </div>
+        <div id="mapa-box"><a class="btn btn-accent mapa-btn reveal" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Star%20Refrigeration%20Electric%20Solar%2C%20Urb.%20Cristal%2C%20Aguadilla%2C%20PR%2C%2000603"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Cómo llegar</a></div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="wrap">
+        <h2 class="sec-title reveal" id="ctaTitulo">¿Necesita refrigeración, electricidad o placas solares?</h2>
+        <p class="sec-sub reveal" id="ctaSub">Escríbanos por WhatsApp o llámenos al 787-566-8393.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-wa" data-wa href="https://wa.me/17875668393?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span data-k="ctaWa">Escribir por WhatsApp</span></a>
+          <a class="btn btn-ghost" data-tel href="tel:+17875668393"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-k="ctaTel">Llamar ahora</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>© <span id="anio">2026</span> <span data-k="nombre">Star Refrigeration Electric Solar</span></strong>
+      <span id="footerTel">Tel. / WhatsApp 787-566-8393</span>
+    </div>
+  </footer>
+
+  <div class="barra" id="barra">
+    <a class="btn btn-wa" data-wa href="https://wa.me/17875668393?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+    <a class="btn btn-accent" data-tel href="tel:+17875668393"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+  </div>
+
+  <script>
+  /* =========================================================
+     DATOS DEL NEGOCIO — se pueden sobreescribir con la URL:
+     index.html?n=Nombre&t=7870000000&z=Pueblo&nicho=barberia&tema=negro
+     (opcionales: d=Dirección, h=Horario, du=Dueño,
+      ig=Instagram, fb=Facebook, m=enlace de Google Maps)
+     Si un dato está vacío, se muestra "Se confirma con el negocio".
+     Los campos opcionales de abajo (subtitulo, codigoPostal,
+     horarioSchema, rating, resenas, destacan, muestra, historia,
+     instagram, facebook, mapa) ocultan su bloque cuando están vacíos.
+     Nicho cafeteria: horarioSchema se muestra como horario por día,
+     y las reseñas solo salen con rating >= 4.5 y 5+ reseñas.
+     Nicho aire: index.html?nicho=aire&tipo=auto&tema=frio
+     (tipo: hogar, auto o ambos; temas: frio, oscuro o verde).
+     Opcionales por URL en este nicho: rating=4.8&resenas=120
+     &anos=12&zonas=Caguas,Gurabo,Juncos (tienen prioridad sobre
+     DATOS; un valor inválido se ignora).
+     Lo que no se indique (zonas, anos, garantia, emergencias)
+     se oculta: nunca se inventa.
+     Nicho electricista: index.html?nicho=electricista&tipo=comercial&tema=voltaje
+     (tipo: residencial, comercial o ambos; temas: voltaje, oscuro o azul).
+     Opcionales por URL en este nicho: los mismos del nicho aire y
+     lic=Perito electricista con licencia&licnum=00000&emergencias=Texto.
+     Sin licencia indicada, la sección se oculta y no se afirma que tenga.
+     ========================================================= */
+  const DATOS = {
+    nombre: "Star Refrigeration Electric Solar",
+    subtitulo: "",
+    telefono: "7875668393",
+    pueblo: "Aguadilla",
+    direccion: "Urb. Cristal",
+    codigoPostal: "00603",
+    horario: "Lunes a viernes, 8:00 a.m. a 3:00 p.m. Sábado, 11:00 a.m. a 3:00 p.m. Domingo cerrado.",
+    horarioSchema: [{"dias": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "abre": "08:00", "cierra": "15:00"}, {"dias": ["Saturday"], "abre": "11:00", "cierra": "15:00"}],   // ej: [{ dias: ["Monday","Tuesday"], abre: "09:00", cierra: "19:00" }]
+    dueno: "",
+    rating: "5.0",          // calificación real de Google, ej: "4.8"
+    resenas: "",         // cantidad real de reseñas, ej: "120"
+    destacan: ["Servicio excelente y profesional", "Reparación de placas solares a buen precio", "Trabajo muy bien hecho"],        // etiquetas cortas, NO reseñas copiadas
+    muestra: true,      // true = barra "MUESTRA de diseño preparada para ..."
+    historia: "",        // historia real del dueño (sección "Sobre nosotros")
+    instagram: "",       // usuario o enlace, ej: "micafe" o "https://www.instagram.com/micafe"
+    facebook: "",        // usuario o enlace
+    mapa: "",            // enlace de Google Maps del negocio (si no, se busca por dirección)
+    mensajeWa: "Hola, vi su página y quisiera información sobre sus servicios.",       // mensaje prellenado de WhatsApp (vacío = el de siempre)
+    resenasGoogle: [],   // reseñas reales, ej: [{ texto: "...", fuente: "Reseña de Google" }]
+    textos: {
+      heroConNombre: false,
+      titulo: "Refrigeración, electricidad y energía solar en Aguadilla",
+      etiqueta: "Aguadilla, Puerto Rico",
+      galEtiqueta: "Aguadilla, Puerto Rico",
+      sub: "Servicio profesional. Escríbanos por WhatsApp o llámenos.",
+      subConPueblo: "Servicio profesional. Escríbanos por WhatsApp o llámenos.",
+      ctaWa: "Escribir por WhatsApp",
+      ctaTel: "Llamar ahora",
+      nav: [["servicios", "Servicios"], ["como", "Cómo trabajamos"], ["resenas", "Reseñas"], ["faq", "Preguntas"], ["contacto", "Contacto"]],
+      tipoSchema: "HomeAndConstructionBusiness",
+      ratingMinimo: null,
+      servNota: "",
+      servicios: [
+        {"icono": "copo", "titulo": "Refrigeración y aire acondicionado", "texto": "Servicio para sus equipos de refrigeración y de aire acondicionado."},
+        {"icono": "rayo", "titulo": "Servicios eléctricos", "texto": "Trabajos de electricidad. Cuéntenos qué necesita."},
+        {"icono": "panel", "titulo": "Placas solares", "texto": "Instalación y reparación de placas solares."}
+      ],
+      pasos: [
+        {"titulo": "Nos escribe o nos llama", "texto": "Cuéntenos qué necesita: refrigeración, aire acondicionado, electricidad o placas solares."},
+        {"titulo": "Coordinamos el día", "texto": "Acordamos con usted el día y la hora."},
+        {"titulo": "Servicio", "texto": "Hacemos el trabajo que acordamos con usted."}
+      ],
+      faq: [
+        {"p": "¿Cuál es el horario?", "r": "De lunes a viernes, de 8:00 a.m. a 3:00 p.m., y los sábados, de 11:00 a.m. a 3:00 p.m. Los domingos estamos cerrados."},
+        {"p": "¿Dónde están?", "r": "En la Urb. Cristal, Aguadilla, PR 00603. En la sección de Contacto está el botón “Cómo llegar”, que abre la dirección en Google Maps."},
+        {"p": "¿Cómo pido un servicio?", "r": "Escríbanos por WhatsApp al 787-566-8393 o llámenos a ese mismo número. Díganos si necesita refrigeración, aire acondicionado, servicios eléctricos o placas solares."}
+      ],
+      contactoEyebrow: "Ubicación y horario",
+      ctaTitulo: "¿Necesita refrigeración, electricidad o placas solares?",
+      ctaSub: "Escríbanos por WhatsApp o llámenos al 787-566-8393."
+    },          // cambia textos del preset solo para este sitio, ej: { sub: "...", servicios: [...] }
+    tipo: "hogar",            // nicho aire: "hogar" (por defecto), "auto" o "ambos"
+    zonas: [],           // nicho aire: pueblos que sirve, ej: ["Caguas", "Gurabo"] (vacío = sección oculta)
+    anos: "",            // nicho aire: años de experiencia reales, ej: "12"
+    garantia: "",        // nicho aire: garantía que indica el negocio, ej: "30 días en la mano de obra"
+    emergencias: "",     // nicho aire: respuesta del negocio, ej: "Sí, llámanos y coordinamos." (vacío = no sale la pregunta)
+    credencial: "",      // nicho electricista: credencial real, ej: "Perito electricista con licencia" (vacío = no se afirma)
+    licencia: "",        // nicho electricista: número de licencia real (vacío = no se muestra)
+    nicho: "aire",
+    tema: ""
+  };
+
+  /* =========================================================
+     IMAGES — pon URLs (o rutas relativas) de fotos reales.
+     Vacío = se muestra el espacio de relleno.
+     ========================================================= */
+  const IMAGES = {
+    hero: "",
+    galeria: ["", "", "", "", "", ""],
+    antes: "",
+    despues: ""
+  };
+
+  /* =========================================================
+     PRESETS POR NICHO
+     ========================================================= */
+  const PRESETS = {
+    construccion: {
+      tipoSchema: "GeneralContractor",
+      tema: "naranja",
+      icono: "casa",
+      etiqueta: "Construcción · {pueblo}",
+      etiquetaSinPueblo: "Construcción",
+      titulo: "Tu proyecto, <em>bien hecho</em> desde el principio.",
+      sub: "Cuéntanos qué quieres construir o remodelar y te orientamos por WhatsApp.",
+      ctaWa: "Cotizar por WhatsApp",
+      ctaTel: "Llamar",
+      servTitulo: "Lo que hacemos",
+      servicios: [
+        { icono: "casa", titulo: "Construcción nueva", texto: "Desde la base hasta la terminación." },
+        { icono: "martillo", titulo: "Remodelaciones", texto: "Cocinas, baños y espacios interiores." },
+        { icono: "techo", titulo: "Techos y sellado", texto: "Reparación e impermeabilización." },
+        { icono: "regla", titulo: "Ampliaciones", texto: "Más espacio para tu casa o negocio." }
+      ],
+      servNota: "Ejemplo de servicios: se ajustan a los que realmente ofrece el negocio.",
+      selTitulo: "Cuéntanos tu proyecto",
+      selSub: "Escoge el tipo de proyecto y se arma tu mensaje.",
+      selLabel: "¿Qué proyecto tienes?",
+      selOpciones: [
+        { label: "Construcción nueva", valor: "una construcción nueva" },
+        { label: "Remodelación", valor: "una remodelación" },
+        { label: "Techo", valor: "un trabajo de techo" },
+        { label: "Ampliación", valor: "una ampliación" }
+      ],
+      selMensaje: "Hola, me interesa cotizar {valor}. ¿Podemos coordinar una visita?",
+      galTitulo: "Proyectos",
+      galEtiqueta: "Foto de proyecto",
+      baTitulo: "Antes y después del proyecto",
+      pasos: [
+        { titulo: "Nos escribes", texto: "Cuéntanos por WhatsApp qué necesitas." },
+        { titulo: "Coordinamos una visita", texto: "Vemos el espacio y hablamos del trabajo." },
+        { titulo: "Empezamos el proyecto", texto: "Te mantenemos al tanto en cada etapa." }
+      ],
+      faq: [
+        { p: "¿Dan estimados?", r: "Escríbenos por WhatsApp con los detalles y te confirmamos cómo trabajamos los estimados." },
+        { p: "¿En qué pueblos trabajan?", r: "Escríbenos por WhatsApp y te confirmamos si llegamos a tu área." },
+        { p: "¿Cuánto tarda un proyecto?", r: "Depende del trabajo. Escríbenos y te orientamos." },
+        { p: "¿Cómo pago?", r: "Escríbenos por WhatsApp y te confirmamos los métodos de pago." }
+      ],
+      ctaTitulo: "¿Listo para empezar?",
+      ctaSub: "Escríbenos por WhatsApp y hablamos de tu proyecto."
+    },
+
+    solar: {
+      tipoSchema: "HomeAndConstructionBusiness",
+      tema: "verde",
+      icono: "sol",
+      etiqueta: "Energía solar · {pueblo}",
+      etiquetaSinPueblo: "Energía solar",
+      titulo: "Energía solar para tu casa, <em>sin complicaciones</em>.",
+      sub: "Pregunta por WhatsApp y te orientamos sobre el sistema que te conviene.",
+      ctaWa: "Orientación por WhatsApp",
+      ctaTel: "Llamar",
+      servTitulo: "Lo que hacemos",
+      servicios: [
+        { icono: "panel", titulo: "Placas solares", texto: "Instalación de sistemas fotovoltaicos." },
+        { icono: "bateria", titulo: "Baterías", texto: "Respaldo para cuando se va la luz." },
+        { icono: "sol", titulo: "Calentadores solares", texto: "Agua caliente con energía del sol." },
+        { icono: "llave", titulo: "Mantenimiento", texto: "Revisión y limpieza del sistema." }
+      ],
+      servNota: "Ejemplo de servicios: se ajustan a los que realmente ofrece el negocio.",
+      selTitulo: "Cuéntanos qué buscas",
+      selSub: "Escoge una opción y se arma tu mensaje.",
+      selLabel: "¿Qué te interesa?",
+      selOpciones: [
+        { label: "Placas solares", valor: "placas solares" },
+        { label: "Baterías", valor: "baterías" },
+        { label: "Calentador solar", valor: "un calentador solar" },
+        { label: "Mantenimiento", valor: "mantenimiento de mi sistema" }
+      ],
+      selMensaje: "Hola, me interesa información sobre {valor}. ¿Me pueden orientar?",
+      galTitulo: "Instalaciones",
+      galEtiqueta: "Foto de instalación",
+      baTitulo: "Antes y después de la instalación",
+      pasos: [
+        { titulo: "Nos escribes", texto: "Cuéntanos sobre tu casa y tu consumo." },
+        { titulo: "Te orientamos", texto: "Te explicamos las opciones disponibles." },
+        { titulo: "Instalamos", texto: "Coordinamos la instalación contigo." }
+      ],
+      faq: [
+        { p: "¿Cuánto cuesta un sistema?", r: "Depende de tu casa y tu consumo. Escríbenos por WhatsApp y te orientamos." },
+        { p: "¿Ofrecen financiamiento?", r: "Escríbenos por WhatsApp y te confirmamos las opciones." },
+        { p: "¿Funciona cuando se va la luz?", r: "Depende del sistema. Escríbenos y te explicamos." },
+        { p: "¿En qué pueblos trabajan?", r: "Escríbenos por WhatsApp y te confirmamos si llegamos a tu área." }
+      ],
+      ctaTitulo: "¿Quieres saber más?",
+      ctaSub: "Escríbenos por WhatsApp y te orientamos."
+    },
+
+    dental: {
+      tipoSchema: "Dentist",
+      tema: "azul",
+      icono: "diente",
+      etiqueta: "Oficina dental · {pueblo}",
+      etiquetaSinPueblo: "Oficina dental",
+      titulo: "Cuida tu sonrisa <em>con calma</em>.",
+      sub: "Pide tu cita por WhatsApp y te confirmamos el horario.",
+      ctaWa: "Pedir cita por WhatsApp",
+      ctaTel: "Llamar",
+      servTitulo: "Servicios",
+      servicios: [
+        { icono: "diente", titulo: "Limpieza", texto: "Limpieza y evaluación general." },
+        { icono: "sonrisa", titulo: "Blanqueamiento", texto: "Para una sonrisa más clara." },
+        { icono: "llave", titulo: "Empastes", texto: "Tratamiento de caries." },
+        { icono: "nino", titulo: "Odontología para niños", texto: "Atención para los más pequeños." }
+      ],
+      servNota: "Ejemplo de servicios: se ajustan a los que realmente ofrece la oficina.",
+      selTitulo: "Pide tu cita",
+      selSub: "Escoge el servicio y se arma tu mensaje.",
+      selLabel: "¿Qué servicio necesitas?",
+      selOpciones: [
+        { label: "Limpieza", valor: "una limpieza" },
+        { label: "Blanqueamiento", valor: "un blanqueamiento" },
+        { label: "Empaste", valor: "un empaste" },
+        { label: "Cita para niño", valor: "una cita para mi hijo/a" }
+      ],
+      selMensaje: "Hola, quiero pedir cita para {valor}. ¿Qué horario tienen disponible?",
+      galTitulo: "Nuestra oficina",
+      galEtiqueta: "Foto del consultorio",
+      baTitulo: "Antes y después del tratamiento",
+      pasos: [
+        { titulo: "Nos escribes", texto: "Cuéntanos qué necesitas por WhatsApp." },
+        { titulo: "Escoges tu cita", texto: "Te damos las horas disponibles." },
+        { titulo: "Te atendemos", texto: "Llegas a tu cita y listo." }
+      ],
+      faq: [
+        { p: "¿Aceptan planes médicos?", r: "Escríbenos por WhatsApp y te confirmamos." },
+        { p: "¿Atienden emergencias?", r: "Escríbenos o llámanos y te orientamos." },
+        { p: "¿Atienden niños?", r: "Escríbenos por WhatsApp y te confirmamos." },
+        { p: "¿Dónde están ubicados?", r: "Escríbenos por WhatsApp y te enviamos la dirección." }
+      ],
+      ctaTitulo: "¿Necesitas una cita?",
+      ctaSub: "Escríbenos por WhatsApp y te confirmamos el horario."
+    },
+
+    barberia: {
+      tipoSchema: "HairSalon",
+      tema: "negro",
+      icono: "tijeras",
+      etiqueta: "Barbería · {pueblo}",
+      etiquetaSinPueblo: "Barbería",
+      titulo: "Cortes que se notan. <em>Sal como nuevo.</em>",
+      sub: "Reserva tu turno por WhatsApp y llega sin esperar.",
+      subConPueblo: "Tu barbería en {pueblo}. Reserva tu turno por WhatsApp y llega sin esperar.",
+      ctaWa: "Reservar por WhatsApp",
+      ctaTel: "Llamar",
+      servTitulo: "Lo que hacemos",
+      servicios: [
+        { icono: "tijeras", titulo: "Corte clásico", texto: "El corte de siempre, bien hecho." },
+        { icono: "navaja", titulo: "Fade y degradados", texto: "Degradados a tu gusto." },
+        { icono: "barba", titulo: "Barba y perfilado", texto: "Arreglo de barba y líneas definidas." },
+        { icono: "nino", titulo: "Corte para niños", texto: "Para los más pequeños de la casa." }
+      ],
+      servNota: "Ejemplo de servicios: se ajustan a los que realmente ofrece la barbería.",
+      selTitulo: "Reserva tu turno",
+      selSub: "Escoge el servicio y se arma tu mensaje.",
+      selLabel: "¿Qué servicio quieres?",
+      selOpciones: [
+        { label: "Corte clásico", valor: "corte clásico" },
+        { label: "Fade y degradados", valor: "fade" },
+        { label: "Barba y perfilado", valor: "arreglo de barba y perfilado" },
+        { label: "Corte para niños", valor: "corte para niño" }
+      ],
+      selMensaje: "Hola, quiero reservar un {valor}. ¿Qué turno tienen disponible?",
+      galTitulo: "Nuestros cortes",
+      galEtiqueta: "Foto de corte",
+      baTitulo: "Antes y después de tu corte",
+      pasos: [
+        { titulo: "Escribes por WhatsApp", texto: "Dinos qué servicio quieres." },
+        { titulo: "Escoges tu turno", texto: "Te decimos qué turnos hay disponibles." },
+        { titulo: "Sales con tu corte", texto: "Llegas a tu hora y sales como nuevo." }
+      ],
+      faq: [
+        { p: "¿Hay que reservar o se puede llegar sin cita?", r: "Escríbenos por WhatsApp y te confirmamos cómo está el turno ese día." },
+        { p: "¿Cortan a niños?", r: "Escríbenos por WhatsApp y te confirmamos el turno para el nene o la nena." },
+        { p: "¿Cómo pago?", r: "Escríbenos por WhatsApp y te confirmamos los métodos de pago." },
+        { p: "¿Dónde están ubicados?", r: "Escríbenos por WhatsApp y te enviamos la dirección." }
+      ],
+      ctaTitulo: "¿Te toca recorte?",
+      ctaSub: "Escríbenos por WhatsApp y reserva tu turno."
+    },
+
+    cafeteria: {
+      tipoSchema: "CafeOrCoffeeShop",
+      tema: "cafe",
+      icono: "taza",
+      etiqueta: "Cafetería · {pueblo}",
+      etiquetaSinPueblo: "Cafetería",
+      titulo: "Café de calidad <em>cerca de ti</em>.",
+      tituloConPueblo: "Café de calidad <em>en {pueblo}</em>.",
+      sub: "Date la vuelta por tu cafecito, el desayuno o algo dulce. ¿Tienes alguna pregunta? Escríbenos por WhatsApp.",
+      ctaWa: "Escríbenos por WhatsApp",
+      ctaTel: "Llamar",
+      ctaHero2: "Cómo llegar",          // el botón secundario del hero abre el mapa
+      nav: [["servicios", "Menú"], ["sobre", "Nosotros"], ["galeria", "Galería"], ["contacto", "Horario"]],
+      ocultar: ["reservar", "antes-despues", "como", "faq"],
+      servEyebrow: "Menú",
+      servTitulo: "Lo que vas a encontrar",
+      servicios: [
+        { icono: "taza", titulo: "Café y espresso", texto: "Tu café como te gusta, caliente y bien hecho." },
+        { icono: "vaso", titulo: "Bebidas frías", texto: "Algo frío para el calor de la isla." },
+        { icono: "huevo", titulo: "Desayunos", texto: "Para arrancar el día con algo rico." },
+        { icono: "dulce", titulo: "Repostería", texto: "Algo dulce para acompañar el café." },
+        { icono: "sandwich", titulo: "Sándwiches", texto: "Para el almuerzo o para llevar." },
+        { icono: "estrella", titulo: "Especiales", texto: "Pregunta por lo que hay hoy." }
+      ],
+      servNota: "Menú de ejemplo por categoría: se ajusta a lo que realmente ofrece el negocio.",
+      sobreTitulo: "Nuestra historia",
+      sobreTexto: "Somos un café local hecho para darte una pausa: buen café y algo rico para acompañar.",
+      sobreTextoConPueblo: "Somos un café de {pueblo} hecho para darte una pausa: buen café y algo rico para acompañar.",
+      historiaPendiente: "[Aquí va la historia del dueño: cómo empezó el negocio, quién está detrás del mostrador y qué hace especial el lugar.]",
+      selTitulo: "", selSub: "", selLabel: "", selOpciones: [], selMensaje: "",
+      galTitulo: "Pasa y date un gusto",
+      galEtiqueta: "Foto del café o del local",
+      galEtiquetas: ["Foto de café", "Foto de repostería", "Foto del local", "Foto de bebida fría", "Foto de desayuno", "Foto del local por dentro"],
+      baTitulo: "",
+      pasos: [],
+      faq: [],
+      ratingMinimo: { calificacion: 4.5, resenas: 5 },
+      horarioPorDia: true,
+      contactoEyebrow: "Horario y ubicación",
+      contactoTitulo: "Ven a visitarnos",
+      ctaTitulo: "¿Se te antojó un cafecito?",
+      ctaSub: "Escríbenos por WhatsApp o llámanos. Te esperamos."
+    },
+
+    aire: {
+      tema: "frio",
+      icono: "copo",
+      heroConNombre: true,              // el título del hero es el nombre del negocio
+      barraFija: true,                  // la barra de WhatsApp se ve desde el principio en el celular
+      contactoWaPrimero: true,          // WhatsApp y teléfono primero; horario y dirección solo si existen
+      porQue: true,                     // sección "Por qué elegirnos" (solo con datos comprobables)
+      titulo: "",
+      ctaWa: "Escríbenos por WhatsApp",
+      ctaTel: "Llámanos",
+      nav: [["servicios", "Servicios"], ["como", "Cómo trabajamos"], ["faq", "Preguntas"], ["contacto", "Contacto"]],
+      ocultar: ["reservar", "galeria", "antes-despues"],
+      servTitulo: "Lo que hacemos",
+      servNota: "Ejemplo de servicios: se ajustan a los que realmente ofrece el negocio.",
+      selTitulo: "", selSub: "", selLabel: "", selOpciones: [], selMensaje: "",
+      galTitulo: "",
+      galEtiqueta: "Foto del trabajo",
+      baTitulo: "",
+      comoEyebrow: "Cómo trabajamos",
+      pasoGarantia: { titulo: "Servicio y garantía", texto: "Coordinamos el día y hacemos el trabajo. Garantía: {garantia}." },
+      faqEmergencias: "¿Atienden emergencias?",
+      ratingMinimo: { calificacion: 4.5, resenas: 5 },
+      tipos: {
+        hogar: {
+          tipoSchema: "HVACBusiness",
+          etiqueta: "Aire acondicionado · {pueblo}",
+          etiquetaSinPueblo: "Aire acondicionado",
+          sub: "Aire acondicionado: instalación, reparación y mantenimiento",
+          subConPueblo: "Aire acondicionado en {pueblo}: instalación, reparación y mantenimiento",
+          servicios: [
+            { icono: "casa", titulo: "Instalación", texto: "Instalamos tu unidad de aire en la casa." },
+            { icono: "llave", titulo: "Mantenimiento y limpieza", texto: "Limpieza y revisión para que siga enfriando bien." },
+            { icono: "martillo", titulo: "Reparación", texto: "Si no enfría, gotea o hace ruido, lo revisamos." },
+            { icono: "copo", titulo: "Mini splits e inverter", texto: "Servicio para unidades mini split e inverter." },
+            { icono: "lupa", titulo: "Diagnóstico", texto: "Te decimos qué tiene tu aire y qué hace falta." },
+            { icono: "edificio", titulo: "Servicio comercial", texto: "Aire acondicionado para oficinas y negocios." }
+          ],
+          pasos: [
+            { titulo: "Nos escribes o llamas", texto: "Cuéntanos qué le pasa a tu aire o qué necesitas instalar." },
+            { titulo: "Diagnóstico y cotización", texto: "Revisamos la unidad y te decimos qué hace falta y cuánto cuesta." },
+            { titulo: "Servicio", texto: "Coordinamos el día y hacemos el trabajo." }
+          ],
+          faq: [
+            { p: "¿Cada cuánto se da mantenimiento?", r: "Depende de cuánto uses el aire y de dónde esté la unidad. Escríbenos y te orientamos según tu caso." },
+            { p: "¿Cómo coordino una cita?", r: "Escríbenos por WhatsApp o llámanos. Dinos qué necesitas y en qué pueblo estás, y coordinamos." },
+            { p: "¿Qué necesito para una cotización?", r: "Dinos qué necesitas y en qué pueblo estás. Si puedes, envíanos una foto de la unidad por WhatsApp." }
+          ],
+          ctaTitulo: "¿Tu aire no está enfriando?",
+          ctaSub: "Escríbenos por WhatsApp o llámanos y coordinamos."
+        },
+        auto: {
+          tipoSchema: "AutoRepair",
+          etiqueta: "Aire de carros · {pueblo}",
+          etiquetaSinPueblo: "Aire de carros",
+          sub: "Aire acondicionado para tu carro",
+          subConPueblo: "Aire acondicionado para tu carro en {pueblo}",
+          servicios: [
+            { icono: "copo", titulo: "Carga de gas", texto: "Para cuando el aire ya no enfría como antes." },
+            { icono: "lupa", titulo: "Diagnóstico del aire", texto: "Buscamos por qué el aire de tu carro no enfría." },
+            { icono: "engranaje", titulo: "Reparación de compresor", texto: "Revisamos el compresor y te decimos qué necesita." },
+            { icono: "carro", titulo: "Evaporador y condensador", texto: "Revisión y reparación de estas piezas del sistema." },
+            { icono: "gota", titulo: "Fugas de refrigerante", texto: "Buscamos por dónde se está saliendo el gas." },
+            { icono: "llave", titulo: "Mantenimiento", texto: "Revisión del sistema para que siga enfriando bien." }
+          ],
+          pasos: [
+            { titulo: "Nos escribes o llamas", texto: "Cuéntanos qué le pasa al aire de tu carro." },
+            { titulo: "Diagnóstico y cotización", texto: "Revisamos el sistema y te decimos qué hace falta y cuánto cuesta." },
+            { titulo: "Servicio", texto: "Coordinamos el día y hacemos el trabajo." }
+          ],
+          faq: [
+            { p: "¿Cada cuánto se da mantenimiento?", r: "Depende de cuánto uses el carro. Si notas que el aire enfría menos, escríbenos y te orientamos." },
+            { p: "¿Cómo coordino una cita?", r: "Escríbenos por WhatsApp o llámanos. Dinos qué le pasa al aire de tu carro y coordinamos." },
+            { p: "¿Qué necesito para una cotización?", r: "Dinos la marca, el modelo y el año de tu carro, y qué le está pasando al aire." }
+          ],
+          ctaTitulo: "¿El aire de tu carro no enfría?",
+          ctaSub: "Escríbenos por WhatsApp o llámanos y coordinamos."
+        },
+        ambos: {
+          tipoSchema: "HVACBusiness",
+          etiqueta: "Aire de casa y carro · {pueblo}",
+          etiquetaSinPueblo: "Aire de casa y carro",
+          sub: "Aire acondicionado para tu casa y tu carro",
+          subConPueblo: "Aire acondicionado para tu casa y tu carro en {pueblo}",
+          servicios: [
+            { icono: "casa", titulo: "Instalación", texto: "Instalamos tu unidad de aire en la casa." },
+            { icono: "llave", titulo: "Mantenimiento y limpieza", texto: "Limpieza y revisión de la unidad de tu casa." },
+            { icono: "martillo", titulo: "Reparación", texto: "Si el aire de la casa no enfría, lo revisamos." },
+            { icono: "copo", titulo: "Carga de gas", texto: "Para cuando el aire del carro ya no enfría como antes." },
+            { icono: "lupa", titulo: "Diagnóstico del aire", texto: "Buscamos por qué el aire de tu carro no enfría." },
+            { icono: "engranaje", titulo: "Reparación de compresor", texto: "Revisamos el compresor del carro y te decimos qué necesita." }
+          ],
+          pasos: [
+            { titulo: "Nos escribes o llamas", texto: "Cuéntanos qué le pasa al aire de tu casa o de tu carro." },
+            { titulo: "Diagnóstico y cotización", texto: "Revisamos el equipo y te decimos qué hace falta y cuánto cuesta." },
+            { titulo: "Servicio", texto: "Coordinamos el día y hacemos el trabajo." }
+          ],
+          faq: [
+            { p: "¿Cada cuánto se da mantenimiento?", r: "Depende de cuánto uses el aire de la casa o del carro. Escríbenos y te orientamos según tu caso." },
+            { p: "¿Cómo coordino una cita?", r: "Escríbenos por WhatsApp o llámanos. Dinos si es para la casa o para el carro, y coordinamos." },
+            { p: "¿Qué necesito para una cotización?", r: "Para la casa, envíanos una foto de la unidad y dinos tu pueblo. Para el carro, dinos la marca, el modelo y el año." }
+          ],
+          ctaTitulo: "¿Tu aire no está enfriando?",
+          ctaSub: "Escríbenos por WhatsApp o llámanos y coordinamos."
+        }
+      }
+    },
+
+    electricista: {
+      tema: "voltaje",
+      temasExtra: ["voltaje"],          // temas que solo acepta este nicho ("oscuro" y "azul" ya existen)
+      tipoDefecto: "residencial",
+      tipoSchema: "Electrician",
+      icono: "rayo",
+      heroConNombre: true,              // el título del hero es el nombre del negocio
+      barraFija: true,                  // la barra de WhatsApp se ve desde el principio en el celular
+      contactoWaPrimero: true,          // WhatsApp y teléfono primero; horario y dirección solo si existen
+      contactoZona: true,               // sin dirección, el contacto muestra la zona de servicio
+      porQue: true,                     // sección "Por qué elegirnos" (solo con datos comprobables)
+      credenciales: true,               // sección "Licencias y credenciales" (solo con datos del negocio)
+      anosTexto: "Dedicados al trabajo eléctrico.",
+      titulo: "",
+      ctaWa: "Escríbenos por WhatsApp",
+      ctaTel: "Llámanos",
+      nav: [["servicios", "Servicios"], ["como", "Cómo trabajamos"], ["faq", "Preguntas"], ["contacto", "Contacto"]],
+      ocultar: ["reservar", "galeria", "antes-despues"],
+      servTitulo: "Lo que hacemos",
+      servNota: "Ejemplo de servicios: se ajustan a los que realmente ofrece el negocio.",
+      selTitulo: "", selSub: "", selLabel: "", selOpciones: [], selMensaje: "",
+      galTitulo: "",
+      galEtiqueta: "Foto del trabajo",
+      baTitulo: "",
+      comoEyebrow: "Cómo trabajamos",
+      pasos: [
+        { titulo: "Nos escribes o llamas", texto: "Cuéntanos qué necesitas. Puedes mandar una foto del problema por WhatsApp." },
+        { titulo: "Diagnóstico y cotización", texto: "Vemos lo que hace falta y te decimos cuánto cuesta." },
+        { titulo: "Trabajo terminado y limpio", texto: "Hacemos el trabajo y dejamos el área limpia." }
+      ],
+      faqEmergencias: "¿Atienden emergencias?",
+      faqEmergenciasPos: 2,
+      ratingMinimo: { calificacion: 4.5, resenas: 5 },
+      tipos: {
+        residencial: {
+          etiqueta: "Electricista · {pueblo}",
+          etiquetaSinPueblo: "Electricista",
+          sub: "Electricista: instalaciones, reparaciones y mejoras para tu hogar",
+          subConPueblo: "Electricista en {pueblo}: instalaciones, reparaciones y mejoras para tu hogar",
+          servicios: [
+            { icono: "enchufe", titulo: "Instalaciones eléctricas", texto: "Receptáculos, interruptores y circuitos nuevos para tu casa." },
+            { icono: "tablero", titulo: "Paneles y breakers", texto: "Cambio y mejora del panel eléctrico y sus breakers." },
+            { icono: "rayo", titulo: "Reparación de fallas", texto: "Si se dispara un breaker o se va la luz en parte de la casa, lo revisamos." },
+            { icono: "bombilla", titulo: "Iluminación y abanicos de techo", texto: "Instalamos lámparas y abanicos de techo." },
+            { icono: "generador", titulo: "Transfer switch para generador", texto: "Para conectar tu generador al panel de la casa." },
+            { icono: "lupa", titulo: "Revisión y diagnóstico", texto: "Buscamos qué está pasando y te explicamos qué hace falta." }
+          ],
+          faq: [
+            { p: "¿Cuándo debo revisar mi panel eléctrico?", r: "Si los breakers se disparan a cada rato, notas olor a quemado u oyes un zumbido en el panel, es momento de revisarlo. Escríbenos y te orientamos." },
+            { p: "¿Puedo mandar una foto del problema por WhatsApp?", r: "Sí. Mándanos la foto y cuéntanos qué está pasando para orientarte mejor." },
+            { p: "¿Qué necesito para una cotización?", r: "Dinos qué necesitas y en qué pueblo estás. Si puedes, mándanos fotos del área o del panel por WhatsApp." }
+          ],
+          ctaTitulo: "¿Tienes un problema eléctrico en casa?",
+          ctaSub: "Escríbenos por WhatsApp o llámanos y coordinamos."
+        },
+        comercial: {
+          etiqueta: "Servicios eléctricos · {pueblo}",
+          etiquetaSinPueblo: "Servicios eléctricos",
+          sub: "Servicios eléctricos para negocios",
+          subConPueblo: "Servicios eléctricos para negocios en {pueblo}",
+          servicios: [
+            { icono: "edificio", titulo: "Instalaciones comerciales", texto: "Trabajo eléctrico para locales, oficinas y negocios." },
+            { icono: "tablero", titulo: "Paneles y distribución", texto: "Paneles, breakers y distribución eléctrica para tu negocio." },
+            { icono: "bombilla", titulo: "Iluminación", texto: "Instalación y cambio de luces para tu local u oficina." },
+            { icono: "llave", titulo: "Mantenimiento eléctrico", texto: "Revisiones para que el negocio siga funcionando sin contratiempos." },
+            { icono: "rayo", titulo: "Reparación de fallas", texto: "Si algo falla en el local, lo revisamos y te decimos qué hace falta." },
+            { icono: "portapapeles", titulo: "Cotizaciones para proyectos", texto: "Cuéntanos tu proyecto y te preparamos una cotización." }
+          ],
+          faq: [
+            { p: "¿Cuándo debo revisar mi panel eléctrico?", r: "Si los breakers se disparan a cada rato, notas olor a quemado u oyes un zumbido en el panel, es momento de revisarlo. Escríbenos y te orientamos." },
+            { p: "¿Puedo mandar una foto del problema por WhatsApp?", r: "Sí. Mándanos la foto y cuéntanos qué está pasando en el negocio para orientarte mejor." },
+            { p: "¿Qué necesito para una cotización?", r: "Dinos qué necesita tu negocio y en qué pueblo está. Si tienes, mándanos fotos del lugar o los planos del proyecto." }
+          ],
+          ctaTitulo: "¿Tu negocio necesita un electricista?",
+          ctaSub: "Escríbenos por WhatsApp o llámanos y coordinamos."
+        },
+        ambos: {
+          etiqueta: "Electricista · {pueblo}",
+          etiquetaSinPueblo: "Electricista",
+          sub: "Electricista: servicios eléctricos para tu hogar y tu negocio",
+          subConPueblo: "Electricista en {pueblo}: servicios eléctricos para tu hogar y tu negocio",
+          servicios: [
+            { icono: "enchufe", titulo: "Instalaciones eléctricas", texto: "Trabajo eléctrico nuevo para tu casa o tu negocio." },
+            { icono: "tablero", titulo: "Paneles y breakers", texto: "Cambio y mejora del panel eléctrico y sus breakers." },
+            { icono: "rayo", titulo: "Reparación de fallas", texto: "Si algo falla en la casa o en el local, lo revisamos." },
+            { icono: "generador", titulo: "Transfer switch para generador", texto: "Para conectar tu generador al panel de la casa." },
+            { icono: "llave", titulo: "Mantenimiento eléctrico", texto: "Revisiones para que el negocio siga funcionando sin contratiempos." },
+            { icono: "portapapeles", titulo: "Cotizaciones para proyectos", texto: "Cuéntanos tu proyecto y te preparamos una cotización." }
+          ],
+          faq: [
+            { p: "¿Cuándo debo revisar mi panel eléctrico?", r: "Si los breakers se disparan a cada rato, notas olor a quemado u oyes un zumbido en el panel, es momento de revisarlo. Escríbenos y te orientamos." },
+            { p: "¿Puedo mandar una foto del problema por WhatsApp?", r: "Sí. Mándanos la foto y cuéntanos qué está pasando para orientarte mejor." },
+            { p: "¿Qué necesito para una cotización?", r: "Dinos qué necesitas, si es para la casa o el negocio, y en qué pueblo estás. Si puedes, mándanos fotos por WhatsApp." }
+          ],
+          ctaTitulo: "¿Necesitas un electricista?",
+          ctaSub: "Escríbenos por WhatsApp o llámanos y coordinamos."
+        }
+      }
+    }
+  };
+
+  /* =========================================================
+     ÍCONOS (SVG inline)
+     ========================================================= */
+  const S = 'viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+  const ICONOS = {
+    wa: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>',
+    tel: '<svg ' + S + '><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>',
+    pin: '<svg ' + S + '><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    reloj: '<svg ' + S + '><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
+    persona: '<svg ' + S + '><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
+    luna: '<svg ' + S + '><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+    solmodo: '<svg ' + S + '><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    tijeras: '<svg ' + S + '><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg>',
+    navaja: '<svg ' + S + '><path d="M3 21l7-7"/><path d="M10 14l9.5-9.5a2.1 2.1 0 0 1 0 3L13 14z"/><path d="M8 16l2-2"/></svg>',
+    barba: '<svg ' + S + '><path d="M5 8c0 7 3 12 7 12s7-5 7-12"/><path d="M5 8h14"/><path d="M9 13c1 .7 2 1 3 1s2-.3 3-1"/></svg>',
+    nino: '<svg ' + S + '><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/><path d="M10 7h.01M14 7h.01"/></svg>',
+    casa: '<svg ' + S + '><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg>',
+    martillo: '<svg ' + S + '><path d="m15 12-8.5 8.5a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 15 22 10.6l-4.6-4.6-1.4-1.4a4 4 0 0 0-5.6 0L9 6l6 6"/></svg>',
+    techo: '<svg ' + S + '><path d="M2 12 12 4l10 8"/><path d="M5 10v10h14V10"/></svg>',
+    regla: '<svg ' + S + '><path d="M21.3 15.3 8.7 2.7a1 1 0 0 0-1.4 0L2.7 7.3a1 1 0 0 0 0 1.4l12.6 12.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/><path d="m7.5 10.5 2-2M10.5 13.5l2-2M13.5 16.5l2-2"/></svg>',
+    sol: '<svg ' + S + '><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    panel: '<svg ' + S + '><path d="M4 4h16l-2 10H6z"/><path d="M12 4v10M5 9h14M12 14v6M8 20h8"/></svg>',
+    bateria: '<svg ' + S + '><rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 11v2M11 9l-2 3h4l-2 3"/></svg>',
+    llave: '<svg ' + S + '><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg>',
+    diente: '<svg ' + S + '><path d="M12 5.5C10.5 4 8.5 3 6.5 3.5 4 4 3 6.5 3.5 9c.5 2.5 1.5 4 2 7 .4 2.5 1 5 2.5 5s1.5-3 2-5 1-3 2-3 1.5 1 2 3 .5 5 2 5 2.1-2.5 2.5-5c.5-3 1.5-4.5 2-7 .5-2.5-.5-5-3-5.5-2-.5-4 .5-5.5 2z"/></svg>',
+    sonrisa: '<svg ' + S + '><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>',
+    taza: '<svg ' + S + '><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg>',
+    vaso: '<svg ' + S + '><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8"/><path d="M5 8h14"/><path d="M7 15a6.5 6.5 0 0 1 5 0 6.5 6.5 0 0 0 5 0"/><path d="m12 8 1-6h2"/></svg>',
+    huevo: '<svg ' + S + '><circle cx="11.5" cy="12.5" r="3.5"/><path d="M3 8c0-3.5 2.5-6 6.5-6 5 0 4.8 3 7.5 5s5 2 5 6c0 4.5-2.5 6.5-7 6.5-2.5 0-2.5 2.5-6 2.5s-7-2-7-5.5c0-3 1.5-3 1.5-5C3.5 10 3 9 3 8z"/></svg>',
+    dulce: '<svg ' + S + '><path d="M5 11h14l-1.5 9h-11z"/><path d="M5 11a7 7 0 0 1 14 0"/><path d="M10 11l.5 9M14 11l-.5 9"/></svg>',
+    sandwich: '<svg ' + S + '><path d="M3 11 12 4l9 7z"/><path d="M3 14h18"/><path d="M4 17h16l-1 3H5z"/></svg>',
+    estrella: '<svg ' + S + '><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2 1.2-6.8-5-4.9 6.9-1z"/></svg>',
+    bolsa: '<svg ' + S + '><path d="M6 7h12l1 14H5z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>',
+    copo: '<svg ' + S + '><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17"/><path d="M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/></svg>',
+    carro: '<svg ' + S + '><path d="M5 17H3v-5l2-5h14l2 5v5h-2"/><path d="M3 12h18M9 17h6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>',
+    gota: '<svg ' + S + '><path d="M12 2.7s7 6.7 7 11.8a7 7 0 0 1-14 0c0-5.1 7-11.8 7-11.8z"/></svg>',
+    lupa: '<svg ' + S + '><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>',
+    edificio: '<svg ' + S + '><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01M10 21v-3h4v3"/></svg>',
+    engranaje: '<svg ' + S + '><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><path d="M12 2v3M12 19v3M4.9 4.9 7 7M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>',
+    rayo: '<svg ' + S + '><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg>',
+    enchufe: '<svg ' + S + '><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0z"/><path d="M12 18v4"/></svg>',
+    tablero: '<svg ' + S + '><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h2M13 6h2M9 10h2M13 10h2M9 14h2M13 14h2M9 18h6"/></svg>',
+    bombilla: '<svg ' + S + '><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2v1.3h6v-1.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>',
+    generador: '<svg ' + S + '><circle cx="12" cy="12" r="10"/><path d="m13 7-3 5h4l-3 5"/></svg>',
+    portapapeles: '<svg ' + S + '><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1M9 11h6M9 15h6"/></svg>',
+    insignia: '<svg ' + S + '><path d="M12 3 4.5 6v5.5c0 4.7 3.2 8 7.5 9.5 4.3-1.5 7.5-4.8 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>',
+    instagram: '<svg ' + S + '><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>',
+    facebook: '<svg ' + S + '><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>'
+  };
+
+  /* =========================================================
+     LÓGICA (no hace falta tocar de aquí para abajo)
+     ========================================================= */
+  const PENDIENTE = "Se confirma con el negocio";
+  const params = new URLSearchParams(location.search);
+  const val = (k, d) => { const v = params.get(k); return v !== null && v.trim() !== "" ? v.trim() : d; };
+  // Redes / mapa: acepta un enlace https o un usuario (@micafe → base + micafe)
+  const red = (v, base) => {
+    v = (v || "").trim();
+    if (/^https:\/\//i.test(v)) return v;
+    const u = v.replace(/^@/, "");
+    return base && /^[\w.]+$/.test(u) ? base + u : "";
+  };
+
+  const D = {
+    nombre:    val("n",  DATOS.nombre) || "Star Refrigeration Electric Solar",
+    telefono:  (val("t", DATOS.telefono) || "").replace(/\D/g, "").slice(-10),
+    pueblo:    val("z",  DATOS.pueblo),
+    direccion: val("d",  DATOS.direccion),
+    horario:   val("h",  DATOS.horario),
+    dueno:     val("du", DATOS.dueno),
+    nicho:     val("nicho", DATOS.nicho),
+    subtitulo: DATOS.subtitulo,
+    cp:        DATOS.codigoPostal,
+    rating:    DATOS.rating,
+    resenas:   DATOS.resenas,
+    destacan:  DATOS.destacan || [],
+    historia:  DATOS.historia,
+    instagram: red(val("ig", DATOS.instagram), "https://www.instagram.com/"),
+    facebook:  red(val("fb", DATOS.facebook), "https://www.facebook.com/"),
+    mapa:      red(val("m", DATOS.mapa), "")
+  };
+  if (!PRESETS[D.nicho]) D.nicho = "construccion";
+  const P = PRESETS[D.nicho];
+  // Tipo (solo nichos con P.tipos): cambia los textos, no el layout
+  if (P.tipos) {
+    D.tipo = (val("tipo", DATOS.tipo) || "").toLowerCase();
+    if (!Object.keys(P.tipos).includes(D.tipo)) D.tipo = P.tipoDefecto || "hogar";
+    Object.assign(P, P.tipos[D.tipo]);
+    // Datos por URL (solo estos nichos): un valor inválido se ignora y queda el de DATOS
+    const rating = val("rating", "").replace(",", ".");
+    if (/^\d(\.\d+)?$/.test(rating) && parseFloat(rating) <= 5) D.rating = rating;
+    D.resenas = val("resenas", "").replace(/\D/g, "") || D.resenas;
+    D.anos = val("anos", "").replace(/\D/g, "") || DATOS.anos;
+    const zonasUrl = val("zonas", "").split(",").map(z => z.trim()).filter(Boolean);
+    D.zonas = zonasUrl.length ? zonasUrl : DATOS.zonas || [];
+  }
+  // Credenciales y emergencias: solo lo que indique el negocio (por URL, solo este nicho)
+  D.emergencias = DATOS.emergencias;
+  if (P.credenciales) {
+    D.credencial = val("lic", DATOS.credencial);
+    D.licencia = val("licnum", DATOS.licencia);
+    D.emergencias = val("emergencias", DATOS.emergencias);
+  }
+  if (DATOS.textos) Object.assign(P, DATOS.textos);
+  D.tema = val("tema", DATOS.tema) || P.tema;
+  if (!(P.temasExtra || []).includes(D.tema) && !/^(negro|azul|verde|naranja|cafe|oscuro|fresco|frio)$/.test(D.tema)) D.tema = P.tema;
+
+  // Enlace a Google Maps: DATOS.mapa / m tiene prioridad; si no, se busca por dirección
+  // (en nichos con botón "Cómo llegar" en el hero basta con el pueblo)
+  const mapaQ = [D.nombre, D.direccion, D.pueblo, "PR", D.cp].filter(Boolean).join(", ");
+  const mapaUrl = D.mapa || (D.direccion || (P.ctaHero2 && D.pueblo)
+    ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(mapaQ) : "");
+
+  // Reseñas: los nichos con ratingMinimo solo muestran la calificación si llega al mínimo
+  const nResenas = parseInt(String(D.resenas || "").replace(/\D/g, ""), 10) || 0;
+  const mostrarRating = P.ratingMinimo
+    ? parseFloat(D.rating) >= P.ratingMinimo.calificacion && nResenas >= P.ratingMinimo.resenas
+    : !!D.rating;
+
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+  const telFmt = D.telefono.length === 10 ? D.telefono.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3") : "";
+  const waBase = D.telefono.length === 10 ? "https://wa.me/1" + D.telefono : "";
+  const waLink = msg => waBase ? waBase + "?text=" + encodeURIComponent(msg) : "#contacto";
+  const $ = id => document.getElementById(id);
+
+  document.documentElement.setAttribute("data-tema", D.tema);
+  if (D.nicho === "aire" || D.nicho === "electricista") document.documentElement.setAttribute("data-nicho", D.nicho);
+
+  // Textos simples
+  const etiqueta = D.pueblo ? P.etiqueta.replace("{pueblo}", D.pueblo) : P.etiquetaSinPueblo;
+  $("etiqueta").textContent = etiqueta;
+  $("heroTitulo").innerHTML = D.pueblo && P.tituloConPueblo // texto fijo del preset; el pueblo va escapado
+    ? P.tituloConPueblo.replace("{pueblo}", esc(D.pueblo)) : P.titulo;
+  if (P.heroConNombre) $("heroTitulo").textContent = D.nombre;
+  $("heroSub").textContent = D.pueblo && P.subConPueblo ? P.subConPueblo.replace("{pueblo}", D.pueblo) : P.sub;
+  if (DATOS.muestra) $("muestra").hidden = false;
+  if (D.subtitulo) { $("marcaSub").textContent = D.subtitulo; $("marcaSub").hidden = false; }
+  $("ctaWa").textContent = P.ctaWa;
+  $("ctaTel").textContent = P.ctaTel;
+  $("servTitulo").textContent = P.servTitulo;
+  $("servNota").textContent = P.servNota;
+  $("ctaTitulo").textContent = P.ctaTitulo;
+  $("ctaSub").textContent = P.ctaSub;
+  $("anio").textContent = new Date().getFullYear();
+  $("footerTel").textContent = telFmt ? "Tel. / WhatsApp " + telFmt : "";
+  document.querySelectorAll('[data-k="nombre"]').forEach(el => el.textContent = D.nombre);
+  document.querySelectorAll('[data-k="ctaWa"]').forEach(el => el.textContent = P.ctaWa);
+  document.querySelectorAll('[data-k="ctaTel"]').forEach(el => el.textContent = P.ctaTel);
+  $("logo").textContent = D.nombre.replace(/[\[\]]/g, "").split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]).join("").toUpperCase() || "•";
+  $("contactoSub").textContent = D.dueno ? "Pregunta por " + D.dueno + "." : "Escríbanos o llámenos.";
+
+  // Ajustes por nicho (solo si el preset los define): nav, secciones, títulos, botón "Cómo llegar"
+  const heroSec = $("ctaTel").closest("a");
+  if (P.ctaHero2) {
+    heroSec.removeAttribute("data-tel");
+    heroSec.querySelector("[data-icon]").dataset.icon = "pin";
+    $("ctaTel").textContent = P.ctaHero2;
+    heroSec.href = mapaUrl || "#contacto";
+    if (mapaUrl) { heroSec.target = "_blank"; heroSec.rel = "noopener"; }
+  }
+  if (!P.porQue) { $("porque").remove(); $("zonas").remove(); } // los otros nichos no llevan estas secciones
+  if (!D.credencial && !D.licencia) $("licencias").remove(); // sin datos del negocio, no se menciona
+  if (P.nav) document.querySelector(".nav-links").innerHTML = P.nav.map(([id, txt]) => '<a href="#' + id + '">' + esc(txt) + '</a>').join("");
+  if (P.ocultar) {
+    P.ocultar.forEach(id => { if ($(id)) $(id).hidden = true; });
+    $("resenas").style.paddingTop = ""; // ya no va pegada a "Cómo funciona"
+  }
+  if (P.servEyebrow) document.querySelector("#servicios .eyebrow").textContent = P.servEyebrow;
+  if (P.comoEyebrow) document.querySelector("#como .eyebrow").textContent = P.comoEyebrow;
+  if (P.contactoEyebrow) document.querySelector("#contacto .eyebrow").textContent = P.contactoEyebrow;
+  if (P.contactoTitulo) document.querySelector("#contacto .sec-title").textContent = P.contactoTitulo;
+  if (P.servicios.length === 6) $("servicios-lista").classList.add("seis");
+  if (P.sobreTitulo) {
+    $("sobre").hidden = false;
+    $("sobreTitulo").textContent = P.sobreTitulo;
+    $("sobreTexto").textContent = D.pueblo && P.sobreTextoConPueblo ? P.sobreTextoConPueblo.replace("{pueblo}", D.pueblo) : P.sobreTexto;
+    $("sobreHistoria").textContent = D.historia || P.historiaPendiente;
+    if (!D.historia) $("sobreHistoria").classList.add("nota");
+  }
+
+  // Meta / título
+  // título y descripción: los del <head> (los que ve WhatsApp)
+  const md = document.querySelector('meta[name="description"]');
+  const mt = document.querySelector('meta[name="theme-color"]');
+  if (mt) mt.setAttribute("content", getComputedStyle(document.documentElement).getPropertyValue("--hero-bg").trim());
+
+  // Íconos
+  document.querySelectorAll("[data-icon]").forEach(el => el.outerHTML = ICONOS[el.dataset.icon] || "");
+
+  // Enlaces WhatsApp / teléfono
+  const msgGeneral = DATOS.mensajeWa || "Hola, vi su página y quiero información.";
+  document.querySelectorAll("[data-wa]").forEach(a => a.href = waLink(msgGeneral));
+  document.querySelectorAll("[data-tel]").forEach(a => a.href = D.telefono ? "tel:+1" + D.telefono : "#contacto");
+
+  // Hero visual
+  $("heroVisual").innerHTML = IMAGES.hero
+    ? '<img src="' + esc(IMAGES.hero) + '" alt="' + esc(D.nombre) + '" />'
+    : '<div class="ph">' + (ICONOS[P.icono] || "") + '<div>' + esc(P.galEtiqueta) + '</div></div>';
+
+  if (IMAGES.hero) $("heroVisual").classList.add("con-foto");
+  // sin foto real del negocio: el cuadro del hero no sale (nada de cuadros vacíos)
+  else { $("heroVisual").style.display = "none"; $("heroVisual").parentNode.style.gridTemplateColumns = "1fr"; }
+
+  // Servicios
+  $("servicios-lista").innerHTML = P.servicios.map(s =>
+    '<article class="card reveal"><div class="ico">' + (ICONOS[s.icono] || "") + '</div><h3>' + esc(s.titulo) + '</h3><p>' + esc(s.texto) + '</p></article>'
+  ).join("");
+
+  // Pasos (la garantía solo sale si el negocio la indica)
+  if (P.pasoGarantia && DATOS.garantia) {
+    P.pasos[P.pasos.length - 1] = { titulo: P.pasoGarantia.titulo, texto: P.pasoGarantia.texto.replace("{garantia}", DATOS.garantia) };
+  }
+  $("pasos-lista").innerHTML = P.pasos.map(p => '<div class="paso reveal"><h3>' + esc(p.titulo) + '</h3><p>' + esc(p.texto) + '</p></div>').join("");
+
+  // Calificación real + etiquetas "Los clientes destacan" (solo si hay datos)
+  const estrellas = r => { const n = Math.round(parseFloat(r)); return "★★★★★".slice(0, n) + "☆☆☆☆☆".slice(0, 5 - n); };
+  let rHtml = "";
+  if (mostrarRating) {
+    rHtml += '<div class="rating reveal"><span class="num">' + esc(D.rating) + '</span><div><span class="stars" aria-hidden="true">' +
+      estrellas(D.rating) + '</span><small>Calificación en Google' + (D.resenas ? " · " + esc(D.resenas) + " reseñas" : "") + '</small></div></div>';
+  }
+  if (D.destacan.length) {
+    rHtml += '<p class="tags-title reveal">Los clientes destacan</p><div class="tags reveal">' +
+      D.destacan.map(t => '<span class="tag">' + esc(t) + '</span>').join("") + '</div>';
+  }
+  $("rating-box").innerHTML = rHtml;
+
+  // Reseñas: las reales de DATOS.resenasGoogle; si no hay, espacios de relleno (poner reseñas reales con permiso del cliente)
+  const reales = DATOS.resenasGoogle || [];
+  $("resenas-lista").innerHTML = reales.length ? reales.map(r =>
+    '<div class="res real reveal">“' + esc(r.texto) + '”<b>' + esc(r.fuente || "Reseña de Google") + '</b></div>'
+  ).join("") : rHtml ? "" : [1, 2, 3].map(() =>
+    '<div class="res reveal">Aquí va una reseña real de un cliente, con su permiso.<b>Nombre del cliente</b></div>'
+  ).join("");
+  if (P.ratingMinimo && !mostrarRating) $("resenas").hidden = true;
+  if (P.ocultar && !$("resenas").hidden && $("faq").hidden) $("contacto").style.paddingTop = ""; // separa de la franja de reseñas
+
+  // Por qué elegirnos: solo lo comprobable con los datos; con menos de 3 puntos no sale
+  if (P.porQue) {
+    const zonas = D.zonas;
+    const hayHorario = D.horario || (DATOS.horarioSchema || []).length;
+    const puntos = [
+      mostrarRating && { icono: "estrella", titulo: D.rating + " en Google", texto: "Según " + D.resenas + " reseñas de clientes." },
+      D.anos && { icono: "reloj", titulo: D.anos + (D.anos === "1" ? " año" : " años") + " de experiencia", texto: P.anosTexto || "Dedicados al aire acondicionado." },
+      DATOS.garantia && { icono: "llave", titulo: "Garantía", texto: DATOS.garantia + "." },
+      hayHorario && { icono: "reloj", titulo: "Horario claro", texto: D.horario || "Mira los días y las horas en Contacto." },
+      zonas.length > 1 && { icono: "pin", titulo: "Servimos " + zonas.length + " pueblos", texto: "Mira la lista aquí abajo." },
+      D.dueno && { icono: "persona", titulo: "Trato con el dueño", texto: "Pregunta por " + D.dueno + "." }
+    ].filter(Boolean).slice(0, 4);
+    if (puntos.length >= 3) {
+      $("porque").hidden = false;
+      if (puntos.length === 3) $("porque-lista").classList.add("seis");
+      $("porque-lista").innerHTML = puntos.map(s =>
+        '<article class="card reveal"><div class="ico">' + ICONOS[s.icono] + '</div><h3>' + esc(s.titulo) + '</h3><p>' + esc(s.texto) + '</p></article>'
+      ).join("");
+    }
+    // Zonas que servimos: solo los pueblos de DATOS.zonas
+    if (zonas.length) {
+      $("zonas").hidden = false;
+      if (!$("porque").hidden || D.credencial || D.licencia) $("zonas").style.paddingTop = "0"; // sigue la misma franja
+      $("zonas-lista").innerHTML = zonas.map(z => '<span class="tag">' + esc(z) + '</span>').join("");
+    }
+  }
+
+  // FAQ (la pregunta de emergencias solo sale si el negocio lo indica)
+  if (P.faqEmergencias && D.emergencias) P.faq.splice(P.faqEmergenciasPos || 1, 0, { p: P.faqEmergencias, r: D.emergencias });
+  $("faq-lista").innerHTML = P.faq.map(f => '<details class="reveal"><summary>' + esc(f.p) + '</summary><p>' + esc(f.r) + '</p></details>').join("");
+
+  // Contacto
+  const dato = (ico, label, valor, href) => {
+    const cuerpo = '<div class="ico">' + ICONOS[ico] + '</div><div style="min-width:0"><small>' + label + '</small>' +
+      (valor ? '<strong>' + esc(valor) + '</strong>' : '<strong class="pend">' + PENDIENTE + '</strong>') + '</div>';
+    return href && valor
+      ? '<a class="dato reveal" href="' + href + '"' + (href.startsWith("http") ? ' target="_blank" rel="noopener"' : "") + '>' + cuerpo + '</a>'
+      : '<div class="dato reveal">' + cuerpo + '</div>';
+  };
+  // Horario por día (desde DATOS.horarioSchema); si no hay, usa el texto de "h"
+  const DIAS = [["Monday", "Lunes"], ["Tuesday", "Martes"], ["Wednesday", "Miércoles"], ["Thursday", "Jueves"], ["Friday", "Viernes"], ["Saturday", "Sábado"], ["Sunday", "Domingo"]];
+  const hora12 = h => { const [hh, mm] = h.split(":").map(Number); return (hh % 12 || 12) + ":" + String(mm || 0).padStart(2, "0") + (hh < 12 ? " a.m." : " p.m."); };
+  const datoHorarioDias = () => {
+    const hs = DATOS.horarioSchema || [];
+    if (!hs.length) return dato("reloj", "Horario", D.horario, "");
+    const filas = DIAS.map(([en, es]) => {
+      const t = hs.filter(h => h.dias.includes(en)).map(h => hora12(h.abre) + " – " + hora12(h.cierra)).join(", ");
+      return '<li><span>' + es + '</span><span>' + esc(t || "Cerrado") + '</span></li>';
+    }).join("");
+    return '<div class="dato reveal"><div class="ico">' + ICONOS.reloj + '</div><div style="flex:1;min-width:0"><small>Horario</small><ul class="horas">' + filas + '</ul></div></div>';
+  };
+  const ubicacion = [D.direccion, D.pueblo, D.cp ? "PR " + D.cp : ""].filter(Boolean).join(", ");
+  // Zona de servicio (nichos sin local fijo): los pueblos que sirve o, si no hay lista, el pueblo
+  const zonaServicio = P.contactoZona && !D.direccion ? D.zonas.join(", ") || D.pueblo : "";
+  $("contacto-lista").innerHTML = (P.contactoWaPrimero ? [
+    dato("wa", "WhatsApp", telFmt || "787-566-8393", waBase ? waLink(msgGeneral) : ""),
+    dato("tel", "Teléfono", telFmt || "787-566-8393", D.telefono ? "tel:+1" + D.telefono : ""),
+    D.horario || (DATOS.horarioSchema || []).length ? datoHorarioDias() : "",
+    zonaServicio ? dato("pin", "Zona de servicio", zonaServicio, mapaUrl)
+      : ubicacion ? dato("pin", D.direccion ? "Dirección" : "Pueblo", ubicacion, mapaUrl) : ""
+  ] : P.horarioPorDia ? [
+    datoHorarioDias(),
+    dato("pin", "Ubicación", ubicacion, mapaUrl),
+    dato("tel", "Teléfono", telFmt, D.telefono ? "tel:+1" + D.telefono : ""),
+    dato("wa", "WhatsApp", telFmt, waBase ? waLink(msgGeneral) : "")
+  ] : [
+    dato("tel", "Teléfono", telFmt, D.telefono ? "tel:+1" + D.telefono : ""),
+    dato("wa", "WhatsApp", telFmt, waBase ? waLink(msgGeneral) : ""),
+    dato("pin", "Ubicación", ubicacion, ""),
+    dato("reloj", "Horario", D.horario, "")
+  ]).join("") + (mostrarRating
+    ? '<div class="dato reveal"><div class="ico">' + ICONOS.sonrisa + '</div><div style="min-width:0"><small>Google</small><strong>' +
+      esc(D.rating) + ' ★' + (D.resenas ? " · " + esc(D.resenas) + " reseñas" : "") + '</strong></div></div>'
+    : "");
+
+  // Licencias y credenciales: solo con la información que dé el negocio (sin datos, no sale)
+  if (D.credencial || D.licencia) {
+    $("licencias").hidden = false;
+    if (!$("porque").hidden) $("licencias").style.paddingTop = "0"; // sigue la misma franja
+    $("licencias-lista").innerHTML = [
+      D.credencial ? dato("insignia", "Credencial", D.credencial, "") : "",
+      D.licencia ? dato("insignia", "Número de licencia", D.licencia, "") : ""
+    ].join("");
+  }
+
+  // Botón "Cómo llegar" (solo si hay dirección o enlace de mapa)
+  if (mapaUrl) {
+    $("mapa-box").innerHTML = '<a class="btn btn-accent mapa-btn reveal" target="_blank" rel="noopener" href="' + esc(mapaUrl) + '">' + ICONOS.pin + 'Cómo llegar</a>';
+  }
+
+  // Redes sociales en el CTA final (solo si hay enlace)
+  [["instagram", "Instagram"], ["facebook", "Facebook"]].forEach(([k, txt]) => {
+    if (D[k]) document.querySelector(".cta-final .hero-ctas").insertAdjacentHTML("beforeend",
+      '<a class="btn btn-ghost" target="_blank" rel="noopener" href="' + esc(D[k]) + '">' + ICONOS[k] + txt + '</a>');
+  });
+
+  // JSON-LD (solo datos reales; sin calificaciones)
+  const schema = { "@context": "https://schema.org", "@type": P.tipoSchema, "name": D.nombre };
+  if (telFmt) schema.telephone = "+1-" + telFmt;
+  if (D.pueblo || D.direccion) {
+    schema.address = { "@type": "PostalAddress", "addressRegion": "PR", "addressCountry": "US" };
+    if (D.direccion) schema.address.streetAddress = D.direccion;
+    if (D.pueblo) schema.address.addressLocality = D.pueblo;
+    if (D.cp) schema.address.postalCode = D.cp;
+  }
+  if (DATOS.horarioSchema && DATOS.horarioSchema.length) {
+    schema.openingHoursSpecification = DATOS.horarioSchema.map(h => ({
+      "@type": "OpeningHoursSpecification", "dayOfWeek": h.dias, "opens": h.abre, "closes": h.cierra
+    }));
+  }
+  if (D.instagram || D.facebook) schema.sameAs = [D.instagram, D.facebook].filter(Boolean);
+  if (mostrarRating && D.resenas) {
+    schema.aggregateRating = { "@type": "AggregateRating", "ratingValue": D.rating, "reviewCount": D.resenas, "bestRating": "5" };
+  }
+  $("schema-negocio").textContent = JSON.stringify(schema);
+
+  // Modo claro / oscuro
+  const root = document.documentElement;
+  const mq = matchMedia("(prefers-color-scheme: dark)");
+  let modo = null;
+  try { modo = localStorage.getItem("modo"); } catch (e) {}
+  if (modo === "claro" || modo === "oscuro") root.setAttribute("data-modo", modo);
+  const esOscuro = () => root.getAttribute("data-modo") ? root.getAttribute("data-modo") === "oscuro" : mq.matches;
+  const pintarModo = () => { $("modoBtn").innerHTML = esOscuro() ? ICONOS.solmodo : ICONOS.luna; };
+  $("modoBtn").addEventListener("click", () => {
+    const nuevo = esOscuro() ? "claro" : "oscuro";
+    root.setAttribute("data-modo", nuevo);
+    try { localStorage.setItem("modo", nuevo); } catch (e) {}
+    pintarModo();
+  });
+  mq.addEventListener && mq.addEventListener("change", pintarModo);
+  pintarModo();
+
+  // Animaciones de scroll (GSAP). Si no cargó, o si se pide menos movimiento, la página queda completa y quieta
+  const partirPalabras = el => {
+    const caminante = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), textos = [];
+    while (caminante.nextNode()) textos.push(caminante.currentNode);
+    textos.forEach(n => {
+      const f = document.createDocumentFragment();
+      n.textContent.split(/(\s+)/).filter(Boolean).forEach(p => {
+        if (!p.trim()) return f.append(" ");
+        const w = document.createElement("span"), i = document.createElement("span");
+        w.className = "palabra"; i.textContent = p; w.append(i); f.append(w);
+      });
+      n.replaceWith(f);
+    });
+  };
+  addEventListener("DOMContentLoaded", () => {
+    const conIntro = root.classList.contains("anim-pre");
+    root.classList.remove("anim-pre");
+    if (!window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.config({ ignoreMobileResize: true });
+    const mm = gsap.matchMedia(), MOV = "(prefers-reduced-motion: no-preference)";
+    const lista = $("servicios-lista"), tarjetas = gsap.utils.toArray(lista.children);
+
+    // Celular: los servicios se apilan (CSS sticky). Nada se fija con pin: la barra del navegador lo haría saltar
+    mm.add(MOV + " and (max-width:639px)", () => {
+      lista.classList.add("pila");
+      tarjetas.forEach((c, i) => {
+        c.style.setProperty("--i", i);
+        if (tarjetas[i + 1]) gsap.to(c, { scale: .94, ease: "none", scrollTrigger: {
+          trigger: tarjetas[i + 1], start: "top bottom", end: () => "top " + (84 + (i + 1) * 10) + "px", scrub: true
+        } });
+      });
+      return () => lista.classList.remove("pila");
+    });
+
+    // Escritorio: scroll horizontal de servicios con la sección fijada (solo si las tarjetas no caben)
+    mm.add(MOV + " and (min-width:1000px) and (min-height:700px)", () => {
+      const sec = $("servicios"), wrap = lista.parentElement;
+      sec.classList.add("con-pista"); lista.classList.add("pista");
+      const recorrido = () => {
+        const pad = parseFloat(getComputedStyle(wrap).paddingLeft) * 2;
+        return Math.max(0, lista.offsetWidth - (wrap.clientWidth - pad));
+      };
+      if (recorrido() > 0) gsap.to(lista, { x: () => -recorrido(), ease: "none", scrollTrigger: {
+        trigger: sec, pin: true, start: "top 64px", end: () => "+=" + recorrido(), scrub: 1, anticipatePin: 1, invalidateOnRefresh: true
+      } });
+      return () => { sec.classList.remove("con-pista"); lista.classList.remove("pista"); };
+    });
+
+    mm.add(MOV, () => {
+      if (conIntro) {
+        partirPalabras($("heroTitulo"));
+        gsap.timeline({ defaults: { ease: "power3.out" } })
+          .from(".hero .etiqueta", { y: 16, opacity: 0, duration: .5 })
+          .from("#heroTitulo .palabra > span", { yPercent: 110, duration: .8, stagger: .06 }, "-=.2")
+          .from([".hero-sub", ".hero .hero-ctas", ".hero-visual"], { y: 20, opacity: 0, duration: .6, stagger: .1 }, "-=.5");
+      }
+
+      gsap.to("#progreso", { scaleX: 1, ease: "none", scrollTrigger: { start: 0, end: "max", scrub: .3 } });
+
+      // El hero se despide con el scroll
+      const salida = { trigger: ".hero", start: "top top", end: "bottom top", scrub: true };
+      gsap.to(".hero-grid", { yPercent: -12, opacity: .25, ease: "none", scrollTrigger: salida });
+      gsap.to(".hero-fondo i", { yPercent: i => 12 + i * 10, scale: 1.12, ease: "none", scrollTrigger: salida });
+
+      // Entradas por lotes (lo que ya anima la pila o la pista va aparte)
+      const entran = gsap.utils.toArray("main .reveal, .tags .tag").filter(el =>
+        !el.closest(".hero, .pila, .pista, [hidden]"));
+      gsap.set(entran, { opacity: 0, y: 32 });
+      ScrollTrigger.batch(entran, {
+        start: "top 90%", once: true,
+        // el escalonado se limita: al saltar lejos (enlace a Contacto) entra un lote grande y no debe tardar segundos
+        onEnter: lote => gsap.to(lote, { opacity: 1, y: 0, duration: .7, ease: "power3.out", stagger: Math.min(.08, .4 / lote.length), overwrite: true })
+      });
+
+      if (!$("como").hidden) gsap.fromTo("#pasos-lista", { "--prog": 0 }, { "--prog": 1, ease: "none",
+        scrollTrigger: { trigger: "#pasos-lista", start: "top 75%", end: "bottom 60%", scrub: true } });
+
+      // La calificación sube hasta su valor real; sin animación se queda el dato fijo
+      const num = document.querySelector("#resenas:not([hidden]) .rating .num");
+      if (num) {
+        const final = num.textContent, cuenta = { v: 0 };
+        ScrollTrigger.create({ trigger: num, start: "top 85%", once: true, onEnter: () => gsap.to(cuenta, {
+          v: parseFloat(final), duration: 1.1, ease: "power2.out",
+          onUpdate: () => num.textContent = cuenta.v.toFixed(1), onComplete: () => num.textContent = final
+        }) });
+      }
+
+      gsap.fromTo(".cta-final", { clipPath: "inset(0% 5% round 32px)" }, { clipPath: "inset(0% 0% round 0px)", ease: "none",
+        scrollTrigger: { trigger: ".cta-final", start: "top bottom", end: "top 45%", scrub: true } });
+    });
+
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => ScrollTrigger.refresh());
+
+    // Seguro: sin cuadros de animación (pestaña en pausa, visor embebido) GSAP no avanza; se revierte todo para que nada quede invisible
+    let hayCuadros = false;
+    requestAnimationFrame(() => hayCuadros = true);
+    setTimeout(() => { if (!hayCuadros) mm.revert(); }, 1500);
+  });
+
+  // Barra móvil: aparece al pasar el hero
+  const barra = $("barra");
+  const onScroll = () => barra.classList.toggle("on", !!P.barraFija || scrollY > 420);
+  addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  </script>
+</body>
+</html>
